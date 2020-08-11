@@ -1,0 +1,102 @@
+{
+  "name": "sfdx-plugin-prettier",
+  "version": "0.0.0",
+  "author": "jayree",
+  "bugs": "https://github.com/jayree/sfdx-plugin-prettier/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/errors": "^1",
+    "@prettier/plugin-xml": "0.10.0",
+    "@salesforce/command": "^3",
+    "@salesforce/core": "^2",
+    "@salesforce/dev-scripts": "0.6.1",
+    "chalk": "4.1.0",
+    "debug": "4.1.1",
+    "execa": "4.0.3",
+    "fs-extra": "9.0.1",
+    "ignore": "5.1.8",
+    "patch-package": "6.2.2",
+    "prettier": "^2.0.5",
+    "prettier-plugin-apex": "1.6.0",
+    "tslib": "^2"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "9.1.1",
+    "@oclif/dev-cli": "^1",
+    "@oclif/plugin-help": "^3",
+    "@oclif/test": "^1",
+    "@salesforce/dev-config": "^2.0.0",
+    "@salesforce/prettier-config": "^0.0.1",
+    "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "@typescript-eslint/parser": "^3.8.0",
+    "chai": "^4.2.0",
+    "eslint": "^7.6.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-salesforce": "^0.1.0",
+    "eslint-config-salesforce-license": "^0.1.0",
+    "eslint-config-salesforce-typescript": "^0.1.0",
+    "eslint-plugin-header": "^3.0.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsdoc": "^30.2.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "globby": "^11",
+    "husky": "^4.2.5",
+    "mocha": "^8.1.1",
+    "nyc": "^15.1.0",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
+    "sinon": "^9.0.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "files": [
+    "/lib",
+    "/messages",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "homepage": "https://github.com/jayree/sfdx-plugin-prettier",
+  "keywords": [
+    "sfdx-plugin"
+  ],
+  "license": "BSD-3-Clause",
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "sfdx",
+    "hooks": {
+      "postsourceupdate": "./lib/hooks/postsourceupdate"
+    },
+    "devPlugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "jayree/sfdx-plugin-prettier",
+  "scripts": {
+    "build": "sf-build",
+    "clean": "sf-clean",
+    "clean-all": "sf-clean all",
+    "compile": "sf-compile",
+    "docs": "sf-docs",
+    "format": "sf-format",
+    "lint": "sf-lint",
+    "lint-fix": "sf-lint --fix",
+    "postcompile": "oclif-dev manifest && oclif-dev readme",
+    "postinstall": "patch-package",
+    "postpack": "rm -f oclif.manifest.json",
+    "prepack": "sf-build",
+    "pretest": "sf-compile-test",
+    "test": "sf-test",
+    "version": "oclif-dev manifest && oclif-dev readme && git add README.md oclif.manifest.json"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "sf-husky-commit-msg",
+      "pre-commit": "sf-husky-pre-commit",
+      "pre-push": "sf-husky-pre-push"
+    }
+  }
+}
