@@ -20,9 +20,9 @@
 
 <!-- usage -->
 ```sh-session
-$ sfdx plugins:install sfdx-plugin-prettier
+$ sfdx plugins:install sfdx-jayree-plugin-prettier
 $ sfdx plugins
-sfdx-plugin-prettier 0.0.0
+sfdx-jayree-plugin-prettier 0.0.0
 ```
 <!-- usagestop -->
 
