@@ -4,5 +4,5 @@ declare type HookOptions = {
     Command?: Command.Class;
     result: string[];
 };
-export declare const hook: HookFunction;
+export declare const prettierFormat: HookFunction;
 export {};
