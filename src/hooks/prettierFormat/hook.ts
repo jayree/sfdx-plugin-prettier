@@ -13,6 +13,7 @@ import * as Debug from 'debug';
 // import ignore from 'ignore';
 import cli from 'cli-ux';
 import { SfdxProject } from '@salesforce/core';
+import { env } from '@salesforce/kit';
 
 type HookFunction = (this: Hook.Context, options: HookOptions) => Promise<void>;
 
@@ -23,12 +24,28 @@ type HookOptions = {
 
 const debug = Debug('prettierFormat');
 
-const bar = cli.progress({
-  barCompleteChar: '\u2588',
-  barIncompleteChar: '\u2591',
-  format: 'prettier | {bar} | {value}/{total} Files',
-  stream: process.stdout,
-});
+const isContentTypeJSON = env.getString('SFDX_CONTENT_TYPE', '').toUpperCase() === 'JSON';
+const isOutputEnabled = !(process.argv.find((arg) => arg === '--json') || isContentTypeJSON);
+
+const noProgress = {
+  start: (): void => {
+    return;
+  },
+  update: (): void => {
+    return;
+  },
+  stop: (): void => {
+    return;
+  },
+};
+
+const bar = isOutputEnabled
+  ? cli.progress({
+      barCompleteChar: '\u2588',
+      barIncompleteChar: '\u2591',
+      format: 'prettier | {bar} | {value}/{total} Files',
+    })
+  : noProgress;
 
 export const prettierFormat: HookFunction = async function (options: HookOptions) {
   debug(`called by: ${options.Command.id}`);
