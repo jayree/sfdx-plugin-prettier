@@ -5,18 +5,19 @@
  * For full license text, see LICENSE.txt file in the repo root or https://opensource.org/licenses/BSD-3-Clause
  */
 import { Hook } from '@oclif/config';
-import * as Debug from 'debug';
 import { env } from '@salesforce/kit';
 
-const debug = Debug('prettierFormat');
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const debug = require('debug')('jayree:hooks');
 
 export const postrun: Hook<'postrun'> = async function (options) {
+  debug(`called 'prettier:postrun' by: ${options.Command.id}`);
   if (!['force:source:retrieve', 'force:source:pull'].includes(options.Command.id)) {
     return;
   }
   if (options.result) {
     if (env.getBoolean('SFDX_DISABLE_PRETTIERPOSTRUN')) {
-      debug('SFDX_DISABLE_PRETTIERPOSTRUN=true');
+      debug('found: SFDX_DISABLE_PRETTIERPOSTRUN=true');
       return;
     }
     options.result = Object.values(options.result)
