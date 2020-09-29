@@ -6,6 +6,8 @@
  */
 import { Hook } from '@oclif/config';
 import { env } from '@salesforce/kit';
+import { SfdxProjectJson } from '@salesforce/core';
+import cli from 'cli-ux';
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const debug = require('debug')('jayree:hooks');
@@ -15,9 +17,23 @@ export const postrun: Hook<'postrun'> = async function (options) {
   if (!['force:source:retrieve', 'force:source:pull'].includes(options.Command.id)) {
     return;
   }
+
   if (options.result) {
     if (env.getBoolean('SFDX_DISABLE_PRETTIERPOSTRUN')) {
       debug('found: SFDX_DISABLE_PRETTIERPOSTRUN=true');
+      return;
+    }
+    const project = await SfdxProjectJson.create({});
+    const myplugin = 'sfdx-plugin-prettier';
+    const myPluginProperties = project.get('plugins') || {};
+    if (!(typeof myPluginProperties[myplugin] === 'object')) {
+      myPluginProperties[myplugin] = { enabled: false };
+      project.set('plugins', myPluginProperties);
+      await project.write();
+      cli.info("enable 'sfdx-plugin-prettier' by setting 'enabled' to 'true' in 'sfdx-project.json'");
+    }
+    if (!myPluginProperties[myplugin]['enabled']) {
+      debug('enabled: false');
       return;
     }
     options.result = Object.values(options.result)

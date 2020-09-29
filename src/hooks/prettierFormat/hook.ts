@@ -9,8 +9,6 @@ import * as fs from 'fs-extra';
 import { Command, Hook } from '@oclif/config';
 import * as prettier from 'prettier';
 import * as Debug from 'debug';
-// import * as execa from 'execa';
-// import ignore from 'ignore';
 import cli from 'cli-ux';
 import { SfdxProject } from '@salesforce/core';
 import { env } from '@salesforce/kit';
