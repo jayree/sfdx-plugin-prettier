@@ -64,26 +64,31 @@ export const prettierFormat: HookFunction = async function (options: HookOptions
   bar.start(files.length, 0);
   for (const [i, filepath] of files.entries()) {
     bar.update(i + 1);
-    if (await fs.exists(filepath)) {
-      const fileInfo = await prettier.getFileInfo(filepath, {
-        ignorePath,
-        resolveConfig: true,
-      });
-      if (!fileInfo.ignored && fileInfo.inferredParser !== null) {
-        const prettierOptions = {
-          ...(await prettier.resolveConfig(filepath, {
-            config,
-            editorconfig: true,
-          })),
-          filepath,
-        };
-        debug({ filepath, fileInfo, prettierOptions });
-        const contents = await fs.readFile(filepath, 'utf8');
-        const formatted = prettier.format(contents, prettierOptions);
-        if (contents !== formatted) {
-          await fs.writeFile(filepath, formatted);
+    try {
+      if (await fs.exists(filepath)) {
+        const fileInfo = await prettier.getFileInfo(filepath, {
+          ignorePath,
+          resolveConfig: true,
+        });
+        if (!fileInfo.ignored && fileInfo.inferredParser !== null) {
+          const prettierOptions = {
+            ...(await prettier.resolveConfig(filepath, {
+              config,
+              editorconfig: true,
+            })),
+            filepath,
+          };
+          debug({ filepath, fileInfo, prettierOptions });
+          const contents = await fs.readFile(filepath, 'utf8');
+          const formatted = prettier.format(contents, prettierOptions);
+          if (contents !== formatted) {
+            await fs.writeFile(filepath, formatted);
+          }
         }
       }
+    } catch (error) {
+      // eslint-disable-next-line @typescript-eslint/restrict-plus-operands
+      cli.log('\n' + filepath + ': ' + error.message);
     }
   }
   bar.stop();
