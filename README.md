@@ -32,4 +32,4 @@ Use `force:source:retrieve` or `force:source:pull` to tirgger the hook. The form
 
 ## Configuration and Ignore Files
 
-`sfdx-plugin-prettier` uses the [`.prettierrc`](https://prettier.io/docs/en/configuration), [`.prettierignore`](https://prettier.io/docs/en/ignore#ignoring-files), and [`.editorconfig`](http://editorconfig.org/) files in the sfdx project folder or a default configuration if the files are not present.
+`sfdx-plugin-prettier` uses the [`.prettierrc`](https://prettier.io/docs/en/configuration), [`.prettierignore`](https://prettier.io/docs/en/ignore#ignoring-files), and [`.editorconfig`](http://editorconfig.org/) files in the sfdx project folder.

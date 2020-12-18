@@ -9,9 +9,9 @@ import * as fs from 'fs-extra';
 import { Command, Hook } from '@oclif/config';
 import * as prettier from 'prettier';
 import * as Debug from 'debug';
-import cli from 'cli-ux';
 import { SfdxProject } from '@salesforce/core';
 import { env } from '@salesforce/kit';
+import { SingleBar as cliProgress } from 'cli-progress';
 
 type HookFunction = (this: Hook.Context, options: HookOptions) => Promise<void>;
 
@@ -25,28 +25,16 @@ const debug = Debug('prettierFormat');
 const isContentTypeJSON = env.getString('SFDX_CONTENT_TYPE', '').toUpperCase() === 'JSON';
 const isOutputEnabled = !(process.argv.find((arg) => arg === '--json') || isContentTypeJSON);
 
-const noProgress = {
-  start: (): void => {
-    return;
-  },
-  update: (): void => {
-    return;
-  },
-  stop: (): void => {
-    return;
-  },
-};
-
-const bar = isOutputEnabled
-  ? cli.progress({
-      barCompleteChar: '\u2588',
-      barIncompleteChar: '\u2591',
-      format: 'prettier | {bar} | {value}/{total} Files',
-    })
-  : noProgress;
+const bar = new cliProgress({
+  barCompleteChar: '\u2588',
+  barIncompleteChar: '\u2591',
+  format: isOutputEnabled ? 'prettier | {bar} | {value}/{total} Files' : '',
+  noTTYOutput: isOutputEnabled ? true : false,
+  stream: process.stdout,
+});
 
 export const prettierFormat: HookFunction = async function (options: HookOptions) {
-  debug(`called by: ${options.Command.id}`);
+  debug(`called 'prettier:prettierFormat' by: ${options.Command.id}`);
   if (!Array.isArray(options.result)) {
     debug({ result: options.result });
     debug('options.result is not an array of file paths - exit');
@@ -87,8 +75,10 @@ export const prettierFormat: HookFunction = async function (options: HookOptions
         }
       }
     } catch (error) {
-      // eslint-disable-next-line @typescript-eslint/restrict-plus-operands
-      cli.log('\n' + filepath + ': ' + error.message);
+      // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
+      const message = `${filepath}: ${error.message}`;
+      // eslint-disable-next-line no-unused-expressions
+      isOutputEnabled ? console.log(`\n${message}`) : console.error(`prettier - ${message}`);
     }
   }
   bar.stop();
