@@ -22,7 +22,7 @@
 ```sh-session
 $ sfdx plugins:install @jayree/sfdx-plugin-prettier
 $ sfdx plugins
-@jayree/sfdx-plugin-prettier 1.0.0
+@jayree/sfdx-plugin-prettier 1.0.1
 ```
 <!-- usagestop -->
 
