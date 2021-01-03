@@ -1,12 +1,12 @@
-# sfdx-plugin-prettier
+# @jayree/sfdx-plugin-prettier
 
 [![sfdx](https://img.shields.io/badge/cli-sfdx-brightgreen.svg)](https://developer.salesforce.com/tools/sfdxcli)
-[![Version](https://img.shields.io/npm/v/sfdx-plugin-prettier.svg)](https://npmjs.org/package/sfdx-plugin-prettier)
+[![Version](https://img.shields.io/npm/v/@jayree/sfdx-plugin-prettier.svg)](https://npmjs.org/package/@jayree/sfdx-plugin-prettier)
 [![CircleCI](https://circleci.com/gh/jayree/sfdx-plugin-prettier/tree/master.svg?style=shield)](https://circleci.com/gh/jayree/sfdx-plugin-prettier/tree/master)
 [![Appveyor CI](https://ci.appveyor.com/api/projects/status/github/jayree/sfdx-plugin-prettier?branch=master&svg=true)](https://ci.appveyor.com/project/jayree/sfdx-plugin-prettier/branch/master)
 [![Codecov](https://codecov.io/gh/jayree/sfdx-plugin-prettier/branch/master/graph/badge.svg)](https://codecov.io/gh/jayree/sfdx-plugin-prettier)
-[![Downloads/week](https://img.shields.io/npm/dw/sfdx-plugin-prettier.svg)](https://npmjs.org/package/sfdx-plugin-prettier)
-[![License](https://img.shields.io/npm/l/sfdx-plugin-prettier.svg)](https://github.com/jayree/sfdx-plugin-prettier/blob/master/package.json)
+[![Downloads/week](https://img.shields.io/npm/dw/@jayree/sfdx-plugin-prettier.svg)](https://npmjs.org/package/@jayree/sfdx-plugin-prettier)
+[![License](https://img.shields.io/npm/l/@jayree/sfdx-plugin-prettier.svg)](https://github.com/jayree/sfdx-plugin-prettier/blob/master/package.json)
 
 `sfdx-plugin-prettier` is an [sfdx](https://developer.salesforce.com/tools/sfdxcli) plugin to format Salesforce metadata source files. It is triggered by the [postsourceupdate](https://github.com/forcedotcom/cli/blob/master/releasenotes/README.md#4950-august-6-2020) hook after running `force:source:retrieve` or `force:source:pull`.
 
