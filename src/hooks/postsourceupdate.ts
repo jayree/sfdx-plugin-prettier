@@ -4,9 +4,11 @@
  * Licensed under the BSD 3-Clause license.
  * For full license text, see LICENSE.txt file in the repo root or https://opensource.org/licenses/BSD-3-Clause
  */
+import * as path from 'path';
 import { Command, Hook, IConfig } from '@oclif/config';
 import { env } from '@salesforce/kit';
-import { SfdxProjectJson } from '@salesforce/core';
+import { SfdxProjectJson, SfdxProject } from '@salesforce/core';
+import * as fs from 'fs-extra';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type HookFunction = (this: Hook.Context, options: HookOptions) => any;
@@ -48,13 +50,24 @@ export const postsourceupdate: HookFunction = async function (options) {
     await projectJson.read();
     const myplugin = 'sfdx-plugin-prettier';
     const myPluginProperties = projectJson.get('plugins') || {};
+    const writeConfig = !(await fs.pathExists(
+      path.join(await SfdxProject.resolveProjectPath(), '.sfdx', 'sfdx-plugin-prettier-config')
+    ));
     if (!(typeof myPluginProperties[myplugin] === 'object')) {
       myPluginProperties[myplugin] = { enabled: false };
-      await projectJson.write(projectJson.set('plugins', myPluginProperties));
-      console.error("enable 'sfdx-plugin-prettier' by setting 'enabled' to 'true' in 'sfdx-project.json'");
+      if (writeConfig) {
+        await projectJson.write(projectJson.set('plugins', myPluginProperties));
+        await fs.ensureFile(path.join(await SfdxProject.resolveProjectPath(), '.sfdx', 'sfdx-plugin-prettier-config'));
+      }
     }
-    if (!myPluginProperties[myplugin]['enabled']) {
+    if (!myPluginProperties[myplugin]?.enabled) {
       debug('enabled: false');
+      process.once('beforeExit', () => {
+        debug('beforeExit');
+        if (writeConfig) {
+          console.error("enable 'sfdx-plugin-prettier' by setting 'enabled' to 'true' in 'sfdx-project.json'");
+        }
+      });
       return;
     }
     const sourcePaths = Object.values(options.result)

@@ -33,3 +33,15 @@ Use `force:source:retrieve` or `force:source:pull` to tirgger the hook. The form
 ## Configuration and Ignore Files
 
 `sfdx-plugin-prettier` uses the [`.prettierrc`](https://prettier.io/docs/en/configuration), [`.prettierignore`](https://prettier.io/docs/en/ignore#ignoring-files), and [`.editorconfig`](http://editorconfig.org/) files in the sfdx project folder.
+
+When the hook is executed for the first time, a `sfdx-plugin-prettier` setting is added to the `sfdx-project.json` file. Here you can enable or disable the hook by setting `enabled` to `true` or `false` (default). If you want the hook to remain disabled for a project, you can remove the setting again.
+
+```json
+{
+  "plugins": {
+    "sfdx-plugin-prettier": {
+      "enabled": true
+    }
+  }
+}
+```
