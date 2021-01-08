@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.0.1...v1.0.2) (2021-01-08)
+
+
+### Bug Fixes
+
+* cleanup dependencies ([edd3a15](https://github.com/jayree/sfdx-plugin-prettier/commit/edd3a157a713a35f6fbe264092105cf0e14aab2c))
+
 ## [1.0.1](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.0.0...v1.0.1) (2021-01-03)
 
 
