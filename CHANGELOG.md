@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.0.3...v1.0.4) (2021-06-27)
+
+
+### Bug Fixes
+
+* skip prettier if no files are found ([556c8f0](https://github.com/jayree/sfdx-plugin-prettier/commit/556c8f0d5d0cbd70bc7495c6db2a8e3fcaefa658))
+
 ## [1.0.3](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.0.2...v1.0.3) (2021-06-09)
 
 
