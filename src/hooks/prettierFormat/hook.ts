@@ -41,6 +41,14 @@ export const prettierFormat: HookFunction = async function (options: HookOptions
     return;
   }
 
+  const files = options.result;
+  debug({ files });
+
+  if (!(files.length > 0)) {
+    debug('no files found');
+    return;
+  }
+
   const projectPath = await SfdxProject.resolveProjectPath();
   const projectJson = new SfdxProjectJson(SfdxProjectJson.getDefaultOptions());
   await projectJson.read();
@@ -64,9 +72,6 @@ export const prettierFormat: HookFunction = async function (options: HookOptions
     });
     return;
   }
-
-  const files = options.result;
-  debug({ files });
 
   const config = await prettier.resolveConfigFile(projectPath);
   const ignorePath = path.join(projectPath, '.prettierignore');
