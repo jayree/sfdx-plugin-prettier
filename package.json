@@ -1,6 +1,6 @@
 {
   "name": "@jayree/sfdx-plugin-prettier",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "A hook that uses prettier to format Salesforce metadata source files retrieved or pulled from an org.",
   "author": "jayree <jayree.git@icloud.com>",
   "bugs": "https://github.com/jayree/sfdx-plugin-prettier/issues",

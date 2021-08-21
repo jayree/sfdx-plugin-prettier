@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.0.4...v1.1.0) (2021-08-21)
+
+
+### Features
+
+* add postretrieve hook ([6eb7e6d](https://github.com/jayree/sfdx-plugin-prettier/commit/6eb7e6d8d42f56f179110ad60a2754f5de209fc2))
+
 ## [1.0.4](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.0.3...v1.0.4) (2021-06-27)
 
 
