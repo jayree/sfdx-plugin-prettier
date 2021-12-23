@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.1.2...v1.1.3) (2021-12-23)
+
+
+### Bug Fixes
+
+* set node version to 14.17.1 ([5352c5b](https://github.com/jayree/sfdx-plugin-prettier/commit/5352c5b79cb59e81480b44e252603ede5685585c))
+
 ## [1.1.2](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.1.1...v1.1.2) (2021-11-26)
 
 
