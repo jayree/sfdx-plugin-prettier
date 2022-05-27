@@ -4,7 +4,7 @@
  * Licensed under the BSD 3-Clause license.
  * For full license text, see LICENSE.txt file in the repo root or https://opensource.org/licenses/BSD-3-Clause
  */
-import { Command, Hook, IConfig } from '@oclif/config';
+import { Command, Hook, Config } from '@oclif/core';
 import { env } from '@salesforce/kit';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -35,11 +35,11 @@ interface FileResponseFailure extends FileResponseBase {
 export type FileResponse = FileResponseSuccess | FileResponseFailure;
 
 type HookOptions = {
-  Command: Command.Class;
+  Command: Command;
   argv: string[];
   commandId: string;
   result: FileResponse[];
-  config: IConfig;
+  config: Config;
 };
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

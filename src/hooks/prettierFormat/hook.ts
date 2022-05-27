@@ -6,17 +6,18 @@
  */
 import * as path from 'path';
 import * as fs from 'fs-extra';
-import { Command, Hook } from '@oclif/config';
+import { Hook, Command } from '@oclif/core';
 import * as prettier from 'prettier';
 import * as Debug from 'debug';
-import { SfdxProjectJson, SfdxProject } from '@salesforce/core';
+import { SfProjectJson, SfProject } from '@salesforce/core';
 import { env } from '@salesforce/kit';
 import { SingleBar as cliProgress } from 'cli-progress';
+import ignore from 'ignore';
 
 type HookFunction = (this: Hook.Context, options: HookOptions) => Promise<void>;
 
 type HookOptions = {
-  Command?: Command.Class;
+  Command?: Command;
   result: string[];
 };
 
@@ -32,6 +33,36 @@ const bar = new cliProgress({
   noTTYOutput: isOutputEnabled ? true : false,
   stream: process.stdout,
 });
+
+async function getCurrentStateFolderFilePath(projectPath: string, file: string, migrate: boolean): Promise<string> {
+  const sfdxPath = path.join(projectPath, '.sfdx', file);
+  const sfPath = path.join(projectPath, '.sf', file);
+
+  if (!(await fs.pathExists(sfPath))) {
+    if (await fs.pathExists(path.join(projectPath, '.gitignore'))) {
+      const gitIgnore = ignore().add(Buffer.from(await fs.readFile(path.join(projectPath, '.gitignore'))).toString());
+      if (!gitIgnore.ignores(path.join('.sf', file))) {
+        if (gitIgnore.ignores(path.join('.sfdx', file))) {
+          debug('use sfdx state folder');
+          return sfdxPath;
+        }
+      }
+    }
+
+    if (await fs.pathExists(sfdxPath)) {
+      if (migrate) {
+        debug(`migrate '${file}' to '.sf' state folder`);
+        await fs.copy(sfdxPath, sfPath);
+      } else {
+        debug('use sfdx state folder');
+        return sfdxPath;
+      }
+    }
+  }
+
+  debug('use sf state folder');
+  return sfPath;
+}
 
 export const prettierFormat: HookFunction = async function (options: HookOptions) {
   debug(`called 'prettier:prettierFormat' by: ${options.Command.id}`);
@@ -49,17 +80,19 @@ export const prettierFormat: HookFunction = async function (options: HookOptions
     return;
   }
 
-  const projectPath = await SfdxProject.resolveProjectPath();
-  const projectJson = new SfdxProjectJson(SfdxProjectJson.getDefaultOptions());
+  const projectPath: string = await SfProject.resolveProjectPath();
+  const projectJson = new SfProjectJson(SfProjectJson.getDefaultOptions());
   await projectJson.read();
   const myplugin = 'sfdx-plugin-prettier';
   const myPluginProperties = projectJson.get('plugins') || {};
-  const writeConfig = !(await fs.pathExists(path.join(projectPath, '.sfdx', 'sfdx-plugin-prettier-config')));
+  const configPath = await getCurrentStateFolderFilePath(projectPath, 'sfdx-plugin-prettier-config', true);
+  const writeConfig = !(await fs.pathExists(configPath));
   if (!(typeof myPluginProperties[myplugin] === 'object')) {
     myPluginProperties[myplugin] = { enabled: false };
     if (writeConfig) {
-      await projectJson.write(projectJson.set('plugins', myPluginProperties));
-      await fs.ensureFile(path.join(projectPath, '.sfdx', 'sfdx-plugin-prettier-config'));
+      projectJson.set('plugins', myPluginProperties);
+      await projectJson.write(projectJson.getContents());
+      await fs.ensureFile(configPath);
     }
   }
   if (!myPluginProperties[myplugin]?.enabled) {
@@ -80,7 +113,7 @@ export const prettierFormat: HookFunction = async function (options: HookOptions
   for (const [i, filepath] of files.entries()) {
     bar.update(i + 1);
     try {
-      if (await fs.exists(filepath)) {
+      if (await fs.pathExists(filepath)) {
         const fileInfo = await prettier.getFileInfo(filepath, {
           ignorePath,
           resolveConfig: true,

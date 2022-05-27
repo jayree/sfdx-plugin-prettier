@@ -1,4 +1,4 @@
-import { Command, Hook, IConfig } from '@oclif/config';
+import { Command, Hook, Config } from '@oclif/core';
 declare type HookFunction = (this: Hook.Context, options: HookOptions) => any;
 interface FileResponseBase {
     fullName: string;
@@ -20,11 +20,11 @@ interface FileResponseFailure extends FileResponseBase {
 }
 export declare type FileResponse = FileResponseSuccess | FileResponseFailure;
 declare type HookOptions = {
-    Command: Command.Class;
+    Command: Command;
     argv: string[];
     commandId: string;
     result: FileResponse[];
-    config: IConfig;
+    config: Config;
 };
 export declare const postretrieve: HookFunction;
 export {};
