@@ -14,7 +14,7 @@
     "fs-extra": "^10.1.0",
     "ignore": "^5.2.0",
     "marked": "^4.0.16",
-    "marked-terminal": "^4.2.0",
+    "marked-terminal": "^5.1.1",
     "prettier": "^2.6.2",
     "prettier-plugin-apex": "^1.10.0",
     "semver": "^7.3.7",
