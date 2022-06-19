@@ -1,5 +1,7 @@
 # @jayree/sfdx-plugin-prettier
 
+A Salesforce CLI plugin containing a hook that uses prettier to format Salesforce metadata source files retrieved or pulled from Salesforce orgs.
+
 [![sfdx](https://img.shields.io/badge/cli-sfdx-brightgreen.svg)](https://developer.salesforce.com/tools/sfdxcli)
 [![Version](https://img.shields.io/npm/v/@jayree/sfdx-plugin-prettier.svg)](https://npmjs.org/package/@jayree/sfdx-plugin-prettier)
 [![CircleCI](https://circleci.com/gh/jayree/sfdx-plugin-prettier/tree/master.svg?style=shield)](https://circleci.com/gh/jayree/sfdx-plugin-prettier/tree/master)
