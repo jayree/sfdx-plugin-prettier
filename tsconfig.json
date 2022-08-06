@@ -1,8 +1,7 @@
 {
   "extends": "@salesforce/dev-config/tsconfig",
   "compilerOptions": {
-    "outDir": "lib",
-    "lib": ["es2019"]
+    "outDir": "lib"
   },
   "include": ["./src/**/*.ts"]
 }

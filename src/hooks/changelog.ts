@@ -7,7 +7,7 @@
 /* istanbul ignore file */
 import { join } from 'path';
 import * as fs from 'fs-extra';
-import { Hook, CliUx } from '@oclif/core';
+import { Hook } from '@oclif/core';
 import { debug as Debug } from 'debug';
 import TerminalRenderer = require('marked-terminal');
 import { marked } from 'marked';
@@ -31,7 +31,6 @@ const parseReleaseNotes = (notes: string, version: string): marked.Token[] => {
     tokens = parsed.filter((token) => {
       // TODO: Could make header depth (2) a setting in oclif.info.releasenotes
       if (token.type === 'heading' && token.depth <= 2) {
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
         const coercedVersion = semver.coerce(token.text).version;
 
         // We will use this to find the closest patch if passed version is not found
@@ -40,13 +39,11 @@ const parseReleaseNotes = (notes: string, version: string): marked.Token[] => {
         if (coercedVersion === desiredVersion) {
           found = true;
 
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-return
           return token;
         }
 
         found = false;
       } else if (found === true) {
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-return
         return token;
       }
     });
@@ -95,7 +92,6 @@ export const changelog: Hook<'changelog'> = async function () {
       }
       debug({ latestVersion: latestVersion.version, version });
       if (latestVersion.version !== version) {
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
         const tokens = parseReleaseNotes(changelogFile, version);
         if (!tokens.length) {
           debug(`${name} - didn't find version '${version}'.`);
@@ -104,8 +100,7 @@ export const changelog: Hook<'changelog'> = async function () {
             renderer: new TerminalRenderer({ emoji: false }),
           });
           tokens.unshift(marked.lexer(`# Changelog for '${name}':`)[0]);
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
-          CliUx.ux.log(marked.parser(tokens));
+          this.log(marked.parser(tokens));
           fs.writeJsonSync(versionFile, { version });
         }
       } else {

@@ -1,6 +1,3 @@
 {
-  "test": {
-    "testsPath": "test/**/*test.ts"
-  },
   "exclude-scripts": ["docs"]
 }

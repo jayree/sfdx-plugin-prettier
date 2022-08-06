@@ -83,24 +83,24 @@ export const prettierFormat: HookFunction = async function (options: HookOptions
   const projectPath: string = await SfProject.resolveProjectPath();
   const projectJson = new SfProjectJson(SfProjectJson.getDefaultOptions());
   await projectJson.read();
-  const myplugin = 'sfdx-plugin-prettier';
-  const myPluginProperties = projectJson.get('plugins') || {};
+  const isEnabled = projectJson.get('plugins.sfdx-plugin-prettier.enabled') as boolean;
   const configPath = await getCurrentStateFolderFilePath(projectPath, 'sfdx-plugin-prettier-config', true);
   const writeConfig = !(await fs.pathExists(configPath));
-  if (!(typeof myPluginProperties[myplugin] === 'object')) {
-    myPluginProperties[myplugin] = { enabled: false };
+  if (isEnabled === undefined) {
     if (writeConfig) {
-      projectJson.set('plugins', myPluginProperties);
+      projectJson.set('plugins.sfdx-plugin-prettier.enabled', true);
       await projectJson.write(projectJson.getContents());
       await fs.ensureFile(configPath);
     }
   }
-  if (!myPluginProperties[myplugin]?.enabled) {
+  if (!isEnabled) {
     debug('enabled: false');
     process.once('beforeExit', () => {
       debug('beforeExit');
       if (writeConfig) {
+        // eslint-disable-next-line no-console
         console.error("enable 'sfdx-plugin-prettier' by setting 'enabled' to 'true' in 'sfdx-project.json'");
+        void fs.ensureFile(configPath);
       }
     });
     return;
@@ -110,7 +110,7 @@ export const prettierFormat: HookFunction = async function (options: HookOptions
   const ignorePath = path.join(projectPath, '.prettierignore');
 
   bar.start(files.length, 0);
-  for (const [i, filepath] of files.entries()) {
+  for await (const [i, filepath] of files.entries()) {
     bar.update(i + 1);
     try {
       if (await fs.pathExists(filepath)) {
@@ -136,8 +136,8 @@ export const prettierFormat: HookFunction = async function (options: HookOptions
       }
     } catch (error) {
       // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-      const message = `${filepath}: ${error.message}`;
-      // eslint-disable-next-line no-unused-expressions
+      const message = `${filepath}: ${(error as Error).message}`;
+      // eslint-disable-next-line no-console, no-unused-expressions
       isOutputEnabled ? console.log(`\n${message}`) : console.error(`prettier - ${message}`);
     }
   }

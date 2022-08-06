@@ -1,7 +1,4 @@
 {
-  "terminal.integrated.env.osx": {
-    "NODE_ENV": "development"
-  },
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,

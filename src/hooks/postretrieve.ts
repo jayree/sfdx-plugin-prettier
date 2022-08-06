@@ -6,6 +6,9 @@
  */
 import { Command, Hook, Config } from '@oclif/core';
 import { env } from '@salesforce/kit';
+import { debug as Debug } from 'debug';
+
+const debug = Debug('prettierFormat:postretrieve');
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type HookFunction = (this: Hook.Context, options: HookOptions) => any;
@@ -48,9 +51,6 @@ function isFileResponseArray(array: any): array is FileResponse[] {
     Array.isArray(array as FileResponse[]) && (array as FileResponse[]).some((element) => element.state !== undefined)
   );
 }
-
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const debug = require('debug')('prettierFormat:postretrieve');
 
 // eslint-disable-next-line @typescript-eslint/require-await
 export const postretrieve: HookFunction = async function (options) {
