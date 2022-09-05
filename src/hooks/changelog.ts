@@ -6,12 +6,12 @@
  */
 /* istanbul ignore file */
 import { join } from 'path';
-import * as fs from 'fs-extra';
-import { Hook } from '@oclif/core';
-import { debug as Debug } from 'debug';
-import TerminalRenderer = require('marked-terminal');
+import fs from 'fs-extra';
+import Debug from 'debug';
+import TerminalRenderer from 'marked-terminal';
 import { marked } from 'marked';
-import * as semver from 'semver';
+import semver from 'semver';
+import { Hook } from '@oclif/core';
 
 const debug = Debug('jayree:hooks');
 
@@ -75,7 +75,7 @@ const parseReleaseNotes = (notes: string, version: string): marked.Token[] => {
 export const changelog: Hook<'changelog'> = async function () {
   process.once('exit', () => {
     try {
-      const pluginRootPath = join(__dirname, '..', '..');
+      const pluginRootPath = join(new URL('./', import.meta.url).pathname, '..', '..');
       const { name, version } = fs.readJsonSync(join(pluginRootPath, 'package.json')) as {
         name: string;
         version: string;

@@ -4,15 +4,15 @@
  * Licensed under the BSD 3-Clause license.
  * For full license text, see LICENSE.txt file in the repo root or https://opensource.org/licenses/BSD-3-Clause
  */
-import * as path from 'path';
-import * as fs from 'fs-extra';
+import path from 'path';
+import fs from 'fs-extra';
 import { Hook, Command } from '@oclif/core';
-import * as prettier from 'prettier';
-import * as Debug from 'debug';
+import prettier from 'prettier';
+import Debug from 'debug';
 import { SfProjectJson, SfProject } from '@salesforce/core';
 import { env } from '@salesforce/kit';
 import { SingleBar as cliProgress } from 'cli-progress';
-import ignore from 'ignore';
+import { default as ignore } from 'ignore';
 
 type HookFunction = (this: Hook.Context, options: HookOptions) => Promise<void>;
 

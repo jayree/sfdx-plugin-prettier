@@ -6,7 +6,7 @@
  */
 import { Command, Hook, Config } from '@oclif/core';
 import { env } from '@salesforce/kit';
-import { debug as Debug } from 'debug';
+import Debug from 'debug';
 
 const debug = Debug('prettierFormat:postretrieve');
 
