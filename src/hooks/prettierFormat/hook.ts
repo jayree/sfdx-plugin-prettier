@@ -12,7 +12,7 @@ import Debug from 'debug';
 import { SfProjectJson, SfProject } from '@salesforce/core';
 import { env } from '@salesforce/kit';
 import { SingleBar as cliProgress } from 'cli-progress';
-import { default as ignore } from 'ignore';
+import factory from 'ignore';
 
 type HookFunction = (this: Hook.Context, options: HookOptions) => Promise<void>;
 
@@ -40,7 +40,9 @@ async function getCurrentStateFolderFilePath(projectPath: string, file: string, 
 
   if (!(await fs.pathExists(sfPath))) {
     if (await fs.pathExists(path.join(projectPath, '.gitignore'))) {
-      const gitIgnore = ignore().add(Buffer.from(await fs.readFile(path.join(projectPath, '.gitignore'))).toString());
+      const gitIgnore = factory
+        .default()
+        .add(Buffer.from(await fs.readFile(path.join(projectPath, '.gitignore'))).toString());
       if (!gitIgnore.ignores(path.join('.sf', file))) {
         if (gitIgnore.ignores(path.join('.sfdx', file))) {
           debug('use sfdx state folder');
