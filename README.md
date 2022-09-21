@@ -24,7 +24,7 @@ A Salesforce CLI plugin containing a hook that uses prettier to format Salesforc
 ```sh-session
 $ sfdx plugins:install @jayree/sfdx-plugin-prettier
 $ sfdx plugins
-@jayree/sfdx-plugin-prettier 1.2.0
+@jayree/sfdx-plugin-prettier 1.2.1
 ```
 <!-- usagestop -->
 
