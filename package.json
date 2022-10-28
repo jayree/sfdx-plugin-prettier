@@ -17,7 +17,7 @@
     "marked": "^4.1.1",
     "marked-terminal": "^5.1.1",
     "prettier": "^2.7.1",
-    "prettier-plugin-apex": "^1.10.0",
+    "prettier-plugin-apex": "^1.11.0",
     "semver": "^7.3.8",
     "tslib": "^2.4.0"
   },
