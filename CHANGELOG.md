@@ -1,3 +1,11 @@
+## [1.2.8](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.2.7...v1.2.8) (2022-11-04)
+
+
+### Bug Fixes
+
+* **deps:** bump marked from 4.1.1 to 4.2.1 ([#146](https://github.com/jayree/sfdx-plugin-prettier/issues/146)) ([85b6b4f](https://github.com/jayree/sfdx-plugin-prettier/commit/85b6b4f3b783d35d8263b213f029eef53ea7943c))
+* **deps:** bump tslib from 2.4.0 to 2.4.1 ([#156](https://github.com/jayree/sfdx-plugin-prettier/issues/156)) ([c845d07](https://github.com/jayree/sfdx-plugin-prettier/commit/c845d0710c11a6733b8f35501c3df7addd162eb1))
+
 ## [1.2.7](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.2.6...v1.2.7) (2022-10-28)
 
 
