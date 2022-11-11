@@ -9,7 +9,7 @@
     "@oclif/core": "^1.19.2",
     "@prettier/plugin-xml": "^2.2.0",
     "@salesforce/core": "^3.31.18",
-    "@salesforce/kit": "^1.7.1",
+    "@salesforce/kit": "^1.8.0",
     "cli-progress": "^3.11.2",
     "debug": "^4.3.4",
     "fs-extra": "^10.1.0",
