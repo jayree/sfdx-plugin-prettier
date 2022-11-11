@@ -8,7 +8,7 @@
   "dependencies": {
     "@oclif/core": "^1.19.2",
     "@prettier/plugin-xml": "^2.2.0",
-    "@salesforce/core": "^3.31.17",
+    "@salesforce/core": "^3.31.18",
     "@salesforce/kit": "^1.7.1",
     "cli-progress": "^3.11.2",
     "debug": "^4.3.4",
