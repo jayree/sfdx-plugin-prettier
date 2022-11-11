@@ -42,7 +42,7 @@
     "@types/prettier": "^2.7.1",
     "@types/sinon": "^10.0.13",
     "@typescript-eslint/eslint-plugin": "^5.42.0",
-    "@typescript-eslint/parser": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.1",
     "chai": "^4.3.7",
     "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
