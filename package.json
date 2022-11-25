@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
-    "@commitlint/config-conventional": "^17.2.0",
+    "@commitlint/config-conventional": "^17.3.0",
     "@oclif/plugin-command-snapshot": "^3.2.11",
     "@oclif/plugin-help": "^5.1.19",
     "@oclif/test": "^2.2.12",
