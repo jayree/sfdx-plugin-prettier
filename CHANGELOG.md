@@ -1,3 +1,11 @@
+## [1.2.12](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.2.11...v1.2.12) (2022-12-02)
+
+
+### Bug Fixes
+
+* **deps:** bump @salesforce/core from 3.32.2 to 3.32.6 ([#195](https://github.com/jayree/sfdx-plugin-prettier/issues/195)) ([e37493d](https://github.com/jayree/sfdx-plugin-prettier/commit/e37493d8535a787322cfbeead328cc56872b3aed))
+* **deps:** bump ignore from 5.2.0 to 5.2.1 ([#196](https://github.com/jayree/sfdx-plugin-prettier/issues/196)) ([6a940ab](https://github.com/jayree/sfdx-plugin-prettier/commit/6a940ab0c3d453cb60b2a1f8ccf1c3a54c85180c))
+
 ## [1.2.11](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.2.10...v1.2.11) (2022-11-25)
 
 
