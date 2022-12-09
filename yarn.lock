@@ -6360,10 +6360,10 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier-plugin-apex@^1.11.0:
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-apex/-/prettier-plugin-apex-1.11.0.tgz#879ab7c44f67618524dedc7abf0599345e01dadb"
-  integrity sha512-snt2WXdS6++c54G3q30L7PmYHmVW08YzMJ0T3lPE8xvS+RmV0AhrWBUDmIl7jlcStUU4nntPwq8EO3di1PB6SQ==
+prettier-plugin-apex@^1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-apex/-/prettier-plugin-apex-1.12.0.tgz#2b7e7f9806e922da1f32f9fb9c9b13ee844aeece"
+  integrity sha512-8tnF2Pp5RMoEYipgFudrujlWRlXqags4lJZD7xSgordX+Bsh8Pq1jXPihkkquHKy4PeZMIuJAtYIEOFLBQIv/w==
   dependencies:
     axios "^1.0.0"
     jest-docblock "^29.0.0"
