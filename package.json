@@ -55,7 +55,7 @@
     "eslint-plugin-sf-plugin": "^1.2.1",
     "husky": "^8.0.2",
     "is-ci": "^3.0.1",
-    "mocha": "^10.1.0",
+    "mocha": "^10.2.0",
     "nyc": "^15.1.0",
     "oclif": "^3.4.2",
     "patch-package": "^6.5.0",
