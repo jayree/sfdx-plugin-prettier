@@ -1,5 +1,5 @@
 import { Command, Hook, Config } from '@oclif/core';
-declare type HookFunction = (this: Hook.Context, options: HookOptions) => any;
+type HookFunction = (this: Hook.Context, options: HookOptions) => any;
 interface FileResponseBase {
     fullName: string;
     type: string;
@@ -18,8 +18,8 @@ interface FileResponseFailure extends FileResponseBase {
     error: string;
     problemType: 'Warning' | 'Error';
 }
-export declare type FileResponse = FileResponseSuccess | FileResponseFailure;
-declare type HookOptions = {
+export type FileResponse = FileResponseSuccess | FileResponseFailure;
+type HookOptions = {
     Command: Command;
     argv: string[];
     commandId: string;
