@@ -1,6 +1,6 @@
 import { Hook, Command } from '@oclif/core';
-declare type HookFunction = (this: Hook.Context, options: HookOptions) => Promise<void>;
-declare type HookOptions = {
+type HookFunction = (this: Hook.Context, options: HookOptions) => Promise<void>;
+type HookOptions = {
     Command?: Command;
     result: string[];
 };
