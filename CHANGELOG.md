@@ -1,3 +1,10 @@
+## [1.2.17](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.2.16...v1.2.17) (2023-01-03)
+
+
+### Bug Fixes
+
+* update changelog hook ([265ffc9](https://github.com/jayree/sfdx-plugin-prettier/commit/265ffc9bbfbf4bd4b9f68fed107fadb1cf97016e))
+
 ## [1.2.16](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.2.15...v1.2.16) (2022-12-30)
 
 
