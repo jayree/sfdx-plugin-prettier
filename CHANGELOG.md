@@ -1,3 +1,10 @@
+## [1.2.19](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.2.18...v1.2.19) (2023-01-12)
+
+
+### Bug Fixes
+
+* restore windows compatibility ([e30aa96](https://github.com/jayree/sfdx-plugin-prettier/commit/e30aa96eaea2d7dced3ce71cb21afae7205e94c3))
+
 ## [1.2.18](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.2.17...v1.2.18) (2023-01-06)
 
 
