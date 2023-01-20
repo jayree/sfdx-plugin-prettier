@@ -14,7 +14,7 @@
     "debug": "^4.3.4",
     "fs-extra": "^10.1.0",
     "ignore": "^5.2.4",
-    "marked": "^4.2.5",
+    "marked": "^4.2.12",
     "marked-terminal": "^5.1.1",
     "prettier": "^2.8.3",
     "prettier-plugin-apex": "^1.12.0",
