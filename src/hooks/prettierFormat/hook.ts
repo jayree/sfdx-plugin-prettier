@@ -90,7 +90,7 @@ export const prettierFormat: HookFunction = async function (options: HookOptions
   const writeConfig = !(await fs.pathExists(configPath));
   if (isEnabled === undefined) {
     if (writeConfig) {
-      projectJson.set('plugins.sfdx-plugin-prettier.enabled', true);
+      projectJson.set('plugins.sfdx-plugin-prettier.enabled', false);
       await projectJson.write(projectJson.getContents());
       await fs.ensureFile(configPath);
     }
