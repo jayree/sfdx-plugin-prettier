@@ -1,3 +1,10 @@
+## [1.2.27](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.2.26...v1.2.27) (2023-02-22)
+
+
+### Bug Fixes
+
+* set enabled to false by default ([c1371d5](https://github.com/jayree/sfdx-plugin-prettier/commit/c1371d5d213772d3a86175287ca36b7e514a0d92))
+
 ## [1.2.26](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.2.25...v1.2.26) (2023-02-17)
 
 
