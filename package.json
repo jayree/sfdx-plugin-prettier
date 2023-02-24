@@ -10,7 +10,7 @@
     "@prettier/plugin-xml": "^2.2.0",
     "@salesforce/core": "^3.33.1",
     "@salesforce/kit": "^1.8.5",
-    "cli-progress": "^3.11.2",
+    "cli-progress": "^3.12.0",
     "debug": "^4.3.4",
     "fs-extra": "^11.1.0",
     "ignore": "^5.2.4",
