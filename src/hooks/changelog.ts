@@ -22,11 +22,11 @@ const __dirname = dirname(__filename);
 // original from https://github.com/salesforcecli/plugin-info/blob/main/src/shared/parseReleaseNotes.ts
 const parseReleaseNotes = (notes: string, version: string, currentVersion: string): marked.Token[] => {
   let found = false;
-  let versions: string[];
+  let versions: string[] = [];
 
   const parsed = marked.lexer(notes);
 
-  let tokens: marked.Token[];
+  let tokens: marked.Token[] = [];
 
   const findVersion = (desiredVersion: string, localVersion: string): void => {
     versions = [];
@@ -34,14 +34,17 @@ const parseReleaseNotes = (notes: string, version: string, currentVersion: strin
     tokens = parsed.filter((token) => {
       // TODO: Could make header depth (2) a setting in oclif.info.releasenotes
       if (token.type === 'heading' && token.depth <= 2) {
-        const coercedVersion = semver.coerce(token.text).version;
-        // We will use this to find the closest patch if passed version is not found
-        versions.push(coercedVersion);
+        const coercedVersion = semver.coerce(token.text)?.version;
 
-        if (coercedVersion <= desiredVersion && coercedVersion > localVersion) {
-          found = true;
+        if (coercedVersion) {
+          // We will use this to find the closest patch if passed version is not found
+          versions.push(coercedVersion);
 
-          return token;
+          if (coercedVersion <= desiredVersion && coercedVersion > localVersion) {
+            found = true;
+
+            return token;
+          }
         }
 
         found = false;

@@ -12,7 +12,7 @@ import Debug from 'debug';
 import { SfProjectJson, SfProject } from '@salesforce/core';
 import { env } from '@salesforce/kit';
 import { SingleBar as cliProgress } from 'cli-progress';
-import factory from 'ignore';
+import ignore, { Ignore } from 'ignore';
 
 type HookFunction = (this: Hook.Context, options: HookOptions) => Promise<void>;
 
@@ -24,7 +24,7 @@ type HookOptions = {
 const debug = Debug('prettierFormat:hook');
 
 const isContentTypeJSON = env.getString('SFDX_CONTENT_TYPE', '').toUpperCase() === 'JSON';
-const isOutputEnabled = !(process.argv.find((arg) => arg === '--json') || isContentTypeJSON);
+const isOutputEnabled = !(process.argv.find((arg) => arg === '--json') ?? isContentTypeJSON);
 
 const bar = new cliProgress({
   barCompleteChar: '\u2588',
@@ -40,9 +40,9 @@ async function getCurrentStateFolderFilePath(projectPath: string, file: string, 
 
   if (!(await fs.pathExists(sfPath))) {
     if (await fs.pathExists(path.join(projectPath, '.gitignore'))) {
-      const gitIgnore = factory
-        .default()
-        .add(Buffer.from(await fs.readFile(path.join(projectPath, '.gitignore'))).toString());
+      const gitIgnore: Ignore = ignore().add(
+        Buffer.from(await fs.readFile(path.join(projectPath, '.gitignore'))).toString()
+      );
       if (!gitIgnore.ignores(path.join('.sf', file))) {
         if (gitIgnore.ignores(path.join('.sfdx', file))) {
           debug('use sfdx state folder');
@@ -67,7 +67,7 @@ async function getCurrentStateFolderFilePath(projectPath: string, file: string, 
 }
 
 export const prettierFormat: HookFunction = async function (options: HookOptions) {
-  debug(`called 'prettier:prettierFormat' by: ${options.Command.id}`);
+  debug(`called 'prettier:prettierFormat' by: ${options.Command?.id}`);
   if (!Array.isArray(options.result)) {
     debug({ result: options.result });
     debug('options.result is not an array of file paths - exit');
@@ -123,7 +123,7 @@ export const prettierFormat: HookFunction = async function (options: HookOptions
         if (!fileInfo.ignored && fileInfo.inferredParser !== null) {
           const prettierOptions = {
             ...(await prettier.resolveConfig(filepath, {
-              config,
+              config: config ?? undefined,
               editorconfig: true,
             })),
             filepath,
