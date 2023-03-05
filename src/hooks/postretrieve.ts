@@ -55,7 +55,7 @@ function isFileResponseArray(array: any): array is FileResponse[] {
 // eslint-disable-next-line @typescript-eslint/require-await
 export const postretrieve: HookFunction = async function (options) {
   debug(`called 'prettier:postretrieve' by: ${options.Command.id}`);
-  if (!['force:source:retrieve', 'force:source:pull'].includes(options.Command.id)) {
+  if (!['force:source:retrieve', 'force:source:pull'].includes(options.Command.id as string)) {
     return;
   }
   if (env.getBoolean('SFDX_DISABLE_PRETTIER')) {

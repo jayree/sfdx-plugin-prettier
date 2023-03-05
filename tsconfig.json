@@ -1,12 +1,18 @@
+// Generated - Do not modify. Controlled by @salesforce/dev-scripts
+// See more at https://github.com/forcedotcom/sfdx-dev-packages/tree/master/packages/dev-scripts
+
 {
-  "extends": "@salesforce/dev-config/tsconfig",
+  "extends": "@salesforce/dev-config/tsconfig-strict",
   "compilerOptions": {
     "outDir": "lib",
-    "module": "node16",
-    "moduleResolution": "Node16",
-    "esModuleInterop": true,
+    "module": "ES2020",
+    "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
-    "strictNullChecks": false
+    "incremental": true,
+    "tsBuildInfoFile": ".tsbuildinfo"
+  },
+  "ts-node": {
+    "esm": true
   },
   "include": ["./src/**/*.ts"]
 }
