@@ -116,6 +116,23 @@ index 15a2d3d..8f510f6 100644
      "chai": "^4.2.0",
      "chalk": "^4.0.0",
      "cosmiconfig": "^7.0.0",
+diff --git a/node_modules/@salesforce/dev-scripts/utils/husky-init.js b/node_modules/@salesforce/dev-scripts/utils/husky-init.js
+index df35b6e..b9197ce 100644
+--- a/node_modules/@salesforce/dev-scripts/utils/husky-init.js
++++ b/node_modules/@salesforce/dev-scripts/utils/husky-init.js
+@@ -21,9 +21,9 @@ function initializeHusky() {
+       .filter((hook) => hook !== '_');
+ 
+     if (localGitHooks.length === 0) {
+-      shell.exec("yarn husky add .husky/commit-msg 'yarn commitlint --edit'");
+-      shell.exec("yarn husky add .husky/pre-commit 'yarn lint && yarn pretty-quick --staged'");
+-      shell.exec("yarn husky add .husky/pre-push 'yarn build && yarn test --forbid-only'");
++      shell.exec("yarn husky add .husky/commit-msg 'npx commitlint --edit'");
++      shell.exec("yarn husky add .husky/pre-commit 'npm run lint && npx pretty-quick --staged'");
++      shell.exec("yarn husky add .husky/pre-push 'npm run build && npm run test --forbid-only'");
+     }
+   } catch (err) {
+     if (err.code === 'ENOENT') {
 diff --git a/node_modules/@salesforce/dev-scripts/utils/sf-config.js b/node_modules/@salesforce/dev-scripts/utils/sf-config.js
 index 8cf8b15..f93fa44 100644
 --- a/node_modules/@salesforce/dev-scripts/utils/sf-config.js
