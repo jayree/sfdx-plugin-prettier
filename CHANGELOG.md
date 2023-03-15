@@ -1,3 +1,10 @@
+## [1.2.32](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.2.31...v1.2.32) (2023-03-15)
+
+
+### Bug Fixes
+
+* use new changelog ([a374c5f](https://github.com/jayree/sfdx-plugin-prettier/commit/a374c5f2cb9905f2066dd1a4c3d7e45ebc8b09db))
+
 ## [1.2.31](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.2.30...v1.2.31) (2023-03-10)
 
 
