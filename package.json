@@ -7,7 +7,7 @@
   "bugs": "https://github.com/jayree/sfdx-plugin-prettier/issues",
   "dependencies": {
     "@jayree/changelog": "^1.1.0",
-    "@oclif/core": "^2.6.2",
+    "@oclif/core": "^2.6.4",
     "@prettier/plugin-xml": "^2.2.0",
     "@salesforce/core": "^3.33.6",
     "@salesforce/kit": "^1.9.2",
