@@ -22,7 +22,7 @@
   "devDependencies": {
     "@oclif/plugin-command-snapshot": "^3.3.12",
     "@oclif/plugin-help": "^5.2.9",
-    "@oclif/test": "^2.3.16",
+    "@oclif/test": "^2.3.17",
     "@salesforce/dev-config": "^3.1.0",
     "@salesforce/dev-scripts": "4.1.2",
     "@salesforce/prettier-config": "^0.0.2",
