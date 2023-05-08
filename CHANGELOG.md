@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.2.39...v1.3.0) (2023-05-08)
+
+
+### Features
+
+* support project retrieve start command ([9166d4a](https://github.com/jayree/sfdx-plugin-prettier/commit/9166d4a42ada59b73d9da18b75352a31ef142958))
+
 ## [1.2.39](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.2.38...v1.2.39) (2023-05-05)
 
 
