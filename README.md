@@ -12,18 +12,22 @@ A Salesforce CLI plugin containing a hook that uses prettier to format Salesforc
 `sfdx-plugin-prettier` is an [sfdx](https://developer.salesforce.com/tools/sfdxcli) plugin to format Salesforce metadata source files. It is triggered by the [postsourceupdate](https://github.com/forcedotcom/cli/blob/master/releasenotes/README.md#4950-august-6-2020) hook after running `force:source:retrieve` or `force:source:pull`.
 
 <!-- toc -->
-* [Install](#install)
-* [Usage](#usage)
-* [Configuration and Ignore Files](#configuration-and-ignore-files)
+* [@jayree/sfdx-plugin-prettier](#jayreesfdx-plugin-prettier)
 <!-- tocstop -->
 
 ## Install
 
 <!-- usage -->
 ```sh-session
-$ sfdx plugins:install @jayree/sfdx-plugin-prettier
-$ sfdx plugins
-@jayree/sfdx-plugin-prettier 1.3.4
+$ npm install -g @jayree/sfdx-plugin-prettier
+$ sfdx COMMAND
+running command...
+$ sfdx (--version)
+@jayree/sfdx-plugin-prettier/1.3.5 linux-x64 node-v18.16.0
+$ sfdx --help [COMMAND]
+USAGE
+  $ sfdx COMMAND
+...
 ```
 <!-- usagestop -->
 
