@@ -734,10 +734,10 @@
     supports-color "^8.1.1"
     tslib "^2"
 
-"@oclif/core@^2.10.0", "@oclif/core@^2.9.3", "@oclif/core@^2.9.4":
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-2.10.0.tgz#8fd4a46bdea2a45ccf090c1433e913ea454b0607"
-  integrity sha512-4csNtXBb+RKrhO2lBAwBvxuyk0B3NB45tAkSHOrJjUo1ufT+qpg9V+g7nHZBMlwoQmjlAjCOKtm6RHar8FrpZg==
+"@oclif/core@^2.11.7", "@oclif/core@^2.9.3", "@oclif/core@^2.9.4":
+  version "2.11.7"
+  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-2.11.7.tgz#7781a4dc65597ed9d8fda39cb1b209efca1c2d24"
+  integrity sha512-0jbHePVekndUTd+Wee0+pnCpRhuHJrKiG9OtMqf4JSBCxp5Q8V+ACf8QKN4gNH9ppbGORfnTIYtXWh60+DcIiw==
   dependencies:
     "@types/cli-progress" "^3.11.0"
     ansi-escapes "^4.3.2"
