@@ -130,7 +130,7 @@ export const prettierFormat: HookFunction = async function (options: HookOptions
           };
           debug({ filepath, fileInfo, prettierOptions });
           const contents = await fs.readFile(filepath, 'utf8');
-          const formatted = prettier.format(contents, prettierOptions);
+          const formatted = await prettier.format(contents, prettierOptions);
           if (contents !== formatted) {
             await fs.writeFile(filepath, formatted);
           }
