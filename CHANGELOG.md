@@ -1,3 +1,11 @@
+## [1.3.16](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.15...v1.3.16) (2023-08-06)
+
+
+### Bug Fixes
+
+* **deps:** bump @prettier/plugin-xml from 2.2.0 to 3.1.1 ([#574](https://github.com/jayree/sfdx-plugin-prettier/issues/574)) ([d7670af](https://github.com/jayree/sfdx-plugin-prettier/commit/d7670aff8382fa41e862e4b0a787d7d605537ef4))
+* **deps:** bump prettier, prettier-plugin-apex and @types/prettier ([#567](https://github.com/jayree/sfdx-plugin-prettier/issues/567)) ([b53537e](https://github.com/jayree/sfdx-plugin-prettier/commit/b53537e9fdf811827c1d34799a96b49fb6f01142))
+
 ## [1.3.15](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.14...v1.3.15) (2023-08-04)
 
 
