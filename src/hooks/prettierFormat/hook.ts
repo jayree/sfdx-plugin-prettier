@@ -4,15 +4,25 @@
  * Licensed under the BSD 3-Clause license.
  * For full license text, see LICENSE.txt file in the repo root or https://opensource.org/licenses/BSD-3-Clause
  */
-import path from 'path';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import fs from 'fs-extra';
 import { Hook, Command } from '@oclif/core';
 import prettier from 'prettier';
 import Debug from 'debug';
-import { SfProjectJson, SfProject } from '@salesforce/core';
+import { SfProjectJson, SfProject, Messages } from '@salesforce/core';
 import { env } from '@salesforce/kit';
 import { SingleBar as cliProgress } from 'cli-progress';
 import ignore, { Ignore } from 'ignore';
+
+// eslint-disable-next-line no-underscore-dangle
+const __filename = fileURLToPath(import.meta.url);
+// eslint-disable-next-line no-underscore-dangle
+const __dirname = dirname(__filename);
+
+Messages.importMessagesDirectory(__dirname);
+
+const messages = Messages.loadMessages('@jayree/sfdx-plugin-prettier', 'hook');
 
 type HookFunction = (this: Hook.Context, options: HookOptions) => Promise<void>;
 
@@ -35,16 +45,16 @@ const bar = new cliProgress({
 });
 
 async function getCurrentStateFolderFilePath(projectPath: string, file: string, migrate: boolean): Promise<string> {
-  const sfdxPath = path.join(projectPath, '.sfdx', file);
-  const sfPath = path.join(projectPath, '.sf', file);
+  const sfdxPath = join(projectPath, '.sfdx', file);
+  const sfPath = join(projectPath, '.sf', file);
 
   if (!(await fs.pathExists(sfPath))) {
-    if (await fs.pathExists(path.join(projectPath, '.gitignore'))) {
+    if (await fs.pathExists(join(projectPath, '.gitignore'))) {
       const gitIgnore: Ignore = ignore
         .default()
-        .add(Buffer.from(await fs.readFile(path.join(projectPath, '.gitignore'))).toString());
-      if (!gitIgnore.ignores(path.join('.sf', file))) {
-        if (gitIgnore.ignores(path.join('.sfdx', file))) {
+        .add(Buffer.from(await fs.readFile(join(projectPath, '.gitignore'))).toString());
+      if (!gitIgnore.ignores(join('.sf', file))) {
+        if (gitIgnore.ignores(join('.sfdx', file))) {
           debug('use sfdx state folder');
           return sfdxPath;
         }
@@ -101,7 +111,7 @@ export const prettierFormat: HookFunction = async function (options: HookOptions
       debug('beforeExit');
       if (writeConfig) {
         // eslint-disable-next-line no-console
-        console.error("enable 'sfdx-plugin-prettier' by setting 'enabled' to 'true' in 'sfdx-project.json'");
+        console.error(messages.getMessage('enablePlugin'));
         void fs.ensureFile(configPath);
       }
     });
@@ -109,7 +119,7 @@ export const prettierFormat: HookFunction = async function (options: HookOptions
   }
 
   const config = await prettier.resolveConfigFile(projectPath);
-  const ignorePath = path.join(projectPath, '.prettierignore');
+  const ignorePath = join(projectPath, '.prettierignore');
 
   bar.start(files.length, 0);
   for await (const [i, filepath] of files.entries()) {
