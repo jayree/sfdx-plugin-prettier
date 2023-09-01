@@ -1007,13 +1007,13 @@
     typescript "^4.9.5"
     wireit "^0.9.5"
 
-"@salesforce/kit@^3.0.9":
-  version "3.0.9"
-  resolved "https://registry.yarnpkg.com/@salesforce/kit/-/kit-3.0.9.tgz#6674559e27914a9c79dd4283eb94eaea6177fe87"
-  integrity sha512-L9xeKGdwT4q40JOZteUWgyul+xpRENNIVg336cgXYrFWs+/+7hrWlV4YZdMkLg9WRCZb1HjERJ9gHNiEKXXriA==
+"@salesforce/kit@^3.0.11", "@salesforce/kit@^3.0.9":
+  version "3.0.11"
+  resolved "https://registry.yarnpkg.com/@salesforce/kit/-/kit-3.0.11.tgz#d03160b658da9817c05e62479ca18283087a0fc0"
+  integrity sha512-ar44uFJfc/RCDWjz7LlrOtFCFHgNNUpddxe0eJCLqQuR/Xs3IlLZKuovWTx322Rzu+V9IIKrIdpz2IqA95/ClA==
   dependencies:
-    "@salesforce/ts-types" "^2.0.6"
-    tslib "^2.6.1"
+    "@salesforce/ts-types" "^2.0.7"
+    tslib "^2.6.2"
 
 "@salesforce/prettier-config@^0.0.3":
   version "0.0.3"
@@ -1037,13 +1037,13 @@
     chalk "^4"
     inquirer "^8.2.5"
 
-"@salesforce/source-deploy-retrieve@^9.7.7":
-  version "9.7.7"
-  resolved "https://registry.yarnpkg.com/@salesforce/source-deploy-retrieve/-/source-deploy-retrieve-9.7.7.tgz#7e418118cba20ba25efd5e6ecf01e89147915bf6"
-  integrity sha512-goSUKH8DKScummtoOmFjxfRZewebClmhJXHD9s7d2BoWOZyjRc0zEC04m4nPT8jwEUPCaa7DiS+jeQc28kHHRQ==
+"@salesforce/source-deploy-retrieve@^9.7.8":
+  version "9.7.8"
+  resolved "https://registry.yarnpkg.com/@salesforce/source-deploy-retrieve/-/source-deploy-retrieve-9.7.8.tgz#34119f33cf93b3991e2dbf33a0f223bb4ea57f1e"
+  integrity sha512-bDmn7ccYfcnmj2Meotk/TABcleVffK/cBiefdKrND+8eKKLWoZpb8VPCgoVaiShvOmKIy0tqrZ1oEF4AzFcn9g==
   dependencies:
     "@salesforce/core" "^5.2.1"
-    "@salesforce/kit" "^3.0.9"
+    "@salesforce/kit" "^3.0.11"
     "@salesforce/ts-types" "^2.0.7"
     fast-levenshtein "^3.0.0"
     fast-xml-parser "^4.2.7"
@@ -1056,7 +1056,7 @@
     proxy-agent "^6.3.0"
     unzipper "0.10.14"
 
-"@salesforce/ts-types@^2.0.5", "@salesforce/ts-types@^2.0.6", "@salesforce/ts-types@^2.0.7":
+"@salesforce/ts-types@^2.0.5", "@salesforce/ts-types@^2.0.7":
   version "2.0.7"
   resolved "https://registry.yarnpkg.com/@salesforce/ts-types/-/ts-types-2.0.7.tgz#02a6999d0b0e7bcd6c6d8ce621c79fa61af24701"
   integrity sha512-8csXgstPuy6QXL3JavkIi/f8DOWHBNCvWeszrFu5sbVlcKO3YqOOCE+rDFGPkrZsYv5OywV6H8kEi877bWOz6Q==
