@@ -23,7 +23,7 @@
     "@oclif/plugin-help": "^5.2.19",
     "@oclif/test": "^2.5.3",
     "@salesforce/dev-config": "^4.0.1",
-    "@salesforce/dev-scripts": "5.8.0",
+    "@salesforce/dev-scripts": "5.10.0",
     "@salesforce/prettier-config": "^0.0.3",
     "@types/cli-progress": "^3.11.2",
     "@types/debug": "^4.1.8",
@@ -158,47 +158,11 @@
       ],
       "output": []
     },
-    "test:compile": {
-      "command": "tsc -p \"./test\" --pretty",
-      "files": [
-        "test/**/*.ts",
-        "tsconfig.json",
-        "test/tsconfig.json"
-      ],
-      "output": []
-    },
     "test": {
       "dependencies": [
         "test:deprecation-policy",
         "lint",
         "test:json-schema"
-      ]
-    },
-    "test:only": {
-      "command": "c8 mocha \"test/**/*.test.ts\"",
-      "env": {
-        "FORCE_COLOR": "2"
-      },
-      "files": [
-        "test/**/*.ts",
-        "src/**/*.ts",
-        "tsconfig.json",
-        ".mocha*",
-        "test/tsconfig.json",
-        "!*.nut.ts",
-        ".nycrc"
-      ],
-      "output": []
-    },
-    "test:command-reference": {
-      "command": "\"./bin/dev.js\" commandreference:generate --erroronwarnings",
-      "files": [
-        "src/**/*.ts",
-        "messages/**",
-        "package.json"
-      ],
-      "output": [
-        "tmp/root"
       ]
     },
     "test:deprecation-policy": {
