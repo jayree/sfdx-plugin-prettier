@@ -158,47 +158,11 @@
       ],
       "output": []
     },
-    "test:compile": {
-      "command": "tsc -p \"./test\" --pretty",
-      "files": [
-        "test/**/*.ts",
-        "tsconfig.json",
-        "test/tsconfig.json"
-      ],
-      "output": []
-    },
     "test": {
       "dependencies": [
         "test:deprecation-policy",
         "lint",
         "test:json-schema"
-      ]
-    },
-    "test:only": {
-      "command": "c8 mocha \"test/**/*.test.ts\"",
-      "env": {
-        "FORCE_COLOR": "2"
-      },
-      "files": [
-        "test/**/*.ts",
-        "src/**/*.ts",
-        "tsconfig.json",
-        ".mocha*",
-        "test/tsconfig.json",
-        "!*.nut.ts",
-        ".nycrc"
-      ],
-      "output": []
-    },
-    "test:command-reference": {
-      "command": "\"./bin/dev.js\" commandreference:generate --erroronwarnings",
-      "files": [
-        "src/**/*.ts",
-        "messages/**",
-        "package.json"
-      ],
-      "output": [
-        "tmp/root"
       ]
     },
     "test:deprecation-policy": {
