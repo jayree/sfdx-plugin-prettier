@@ -1036,12 +1036,12 @@
     chalk "^4"
     inquirer "^8.2.5"
 
-"@salesforce/source-deploy-retrieve@^9.7.13":
-  version "9.7.13"
-  resolved "https://registry.yarnpkg.com/@salesforce/source-deploy-retrieve/-/source-deploy-retrieve-9.7.13.tgz#85777222e157a621eb00fcef0487c682b7e3d5f7"
-  integrity sha512-QRhdepll3+ED9w4clI/RvcSLtuSbTzFPZenzrvJ2R7Pg5gXRZQIJrphEkAnY7oteVBBUxPVdYgbeuQxeoi98dg==
+"@salesforce/source-deploy-retrieve@^9.7.15":
+  version "9.7.15"
+  resolved "https://registry.yarnpkg.com/@salesforce/source-deploy-retrieve/-/source-deploy-retrieve-9.7.15.tgz#a891e95101816a7e33854bc42ba21fafbdb1728e"
+  integrity sha512-av9Ojd9B/uegLNJth41aVPvAVPh8N0CllzfiDG5qbtDXW7WV/bqgWjiiiGc1U6RWnJ9OmQZNL/EjaSX0UPhiLA==
   dependencies:
-    "@salesforce/core" "^5.2.7"
+    "@salesforce/core" "^5.2.9"
     "@salesforce/kit" "^3.0.11"
     "@salesforce/ts-types" "^2.0.7"
     fast-levenshtein "^3.0.0"
