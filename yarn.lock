@@ -1199,10 +1199,10 @@
   resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.3.4.tgz#e913e8175db8307d78b4e8fa690408ba6b65dee4"
   integrity sha512-KnRanxnpfpjUTqTCXslZSEdLfXExwgNxYPdiO2WGUj8+HDjFi8R3k5RVKPeSCzLjCcshCAtVO2QBbVuAV4kTnw==
 
-"@types/cli-progress@^3.11.0", "@types/cli-progress@^3.11.2":
-  version "3.11.2"
-  resolved "https://registry.yarnpkg.com/@types/cli-progress/-/cli-progress-3.11.2.tgz#c8ff27cf89b46bfbb7faf140432c464d3a62ec4e"
-  integrity sha512-Yt/8rEJalfa9ve2SbfQnwFHrc9QF52JIZYHW3FDaTMpkCvnns26ueKiPHDxyJ0CS//IqjMINTx7R5Xa7k7uFHQ==
+"@types/cli-progress@^3.11.0", "@types/cli-progress@^3.11.3":
+  version "3.11.3"
+  resolved "https://registry.yarnpkg.com/@types/cli-progress/-/cli-progress-3.11.3.tgz#2a982d4c68fb288048daa0b3293c0ce81c1785ee"
+  integrity sha512-/+C9xAdVtc+g5yHHkGBThgAA8rYpi5B+2ve3wLtybYj0JHEBs57ivR4x/zGfSsplRnV+psE91Nfin1soNKqz5Q==
   dependencies:
     "@types/node" "*"
 
