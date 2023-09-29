@@ -8,7 +8,7 @@
   "dependencies": {
     "@jayree/changelog": "^1.1.5",
     "@prettier/plugin-xml": "^3.2.1",
-    "@salesforce/sf-plugins-core": "^3.1.23",
+    "@salesforce/sf-plugins-core": "^3.1.25",
     "@salesforce/source-deploy-retrieve": "^9.7.18",
     "cli-progress": "^3.12.0",
     "debug": "^4.3.4",
