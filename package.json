@@ -26,7 +26,7 @@
     "@salesforce/dev-scripts": "5.10.0",
     "@salesforce/prettier-config": "^0.0.3",
     "@types/cli-progress": "^3.11.2",
-    "@types/debug": "^4.1.8",
+    "@types/debug": "^4.1.9",
     "@types/fs-extra": "^11.0.2",
     "@types/jsforce": "^1.11.2",
     "@types/prettier": "^3.0.0",
