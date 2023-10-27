@@ -1045,15 +1045,7 @@
     typescript "^4.9.5"
     wireit "^0.9.5"
 
-"@salesforce/kit@^3.0.13":
-  version "3.0.13"
-  resolved "https://registry.yarnpkg.com/@salesforce/kit/-/kit-3.0.13.tgz#10b47ad6e0e27c3a9f97eb6a5cdcfffa9ba1f163"
-  integrity sha512-HLQ5L5bBi0tsMeH5ZHJAhHUpvNUNPQoNJt2O82Jf6C60GGsrlzwzQ5ONAHGNBgKSZ7HLr0UGL5xaA+hE9uOcgw==
-  dependencies:
-    "@salesforce/ts-types" "^2.0.8"
-    tslib "^2.6.2"
-
-"@salesforce/kit@^3.0.14":
+"@salesforce/kit@^3.0.13", "@salesforce/kit@^3.0.14":
   version "3.0.15"
   resolved "https://registry.yarnpkg.com/@salesforce/kit/-/kit-3.0.15.tgz#713df3f5767f874c70a2e731c7cb5ba677989559"
   integrity sha512-XkA8jsuLvVnyP460dAbU3pBFP2IkmmmsVxMQVifcKKbNWaIBbZBzAfj+vdaQfnvZyflLhsrFT3q2xkb0vHouPg==
@@ -1083,12 +1075,12 @@
     chalk "^4"
     inquirer "^8.2.5"
 
-"@salesforce/source-deploy-retrieve@^9.7.27":
-  version "9.7.27"
-  resolved "https://registry.yarnpkg.com/@salesforce/source-deploy-retrieve/-/source-deploy-retrieve-9.7.27.tgz#1d88eb237361bab62c3a4c683be178ca3cc77e4c"
-  integrity sha512-ot0TpibH8OZVOJpMo10TuZ6acqpV7T04qNCpEcjrcpGVolCahMzFtpiJ4TjBxL+MPY/efuWWBj3YELjy9hgFxw==
+"@salesforce/source-deploy-retrieve@^9.7.28":
+  version "9.7.28"
+  resolved "https://registry.yarnpkg.com/@salesforce/source-deploy-retrieve/-/source-deploy-retrieve-9.7.28.tgz#7142733acfd269ba28212044cd8e024b3d8a3568"
+  integrity sha512-0dmPAqxH1aI3EN7rXA1pS9iuOaiW8FM6iuqyRZ3oJYPTW4JD6g1YsRAOdAzmIPjLzhMXFDDcSbS6/+ZfOTJPQg==
   dependencies:
-    "@salesforce/core" "^5.3.1"
+    "@salesforce/core" "^5.3.10"
     "@salesforce/kit" "^3.0.13"
     "@salesforce/ts-types" "^2.0.7"
     fast-levenshtein "^3.0.0"
@@ -1102,14 +1094,7 @@
     proxy-agent "^6.3.1"
     unzipper "0.10.14"
 
-"@salesforce/ts-types@^2.0.7", "@salesforce/ts-types@^2.0.8":
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/@salesforce/ts-types/-/ts-types-2.0.8.tgz#e732b5a42cbec6bda79c089a0633fc643daf8bca"
-  integrity sha512-vuzLcxtThBhpuhmnoh8GFrVU8XjdoNyQm9gPtmcjUyUD/9nQIBTAX8oGoUvCiiq93c4LFEmSua+xm3yu0bbNfg==
-  dependencies:
-    tslib "^2.6.2"
-
-"@salesforce/ts-types@^2.0.9":
+"@salesforce/ts-types@^2.0.7", "@salesforce/ts-types@^2.0.8", "@salesforce/ts-types@^2.0.9":
   version "2.0.9"
   resolved "https://registry.yarnpkg.com/@salesforce/ts-types/-/ts-types-2.0.9.tgz#66bff7b41720065d6b01631b6f6a3ccca02857c5"
   integrity sha512-boUD9jw5vQpTCPCCmK/NFTWjSuuW+lsaxOynkyNXLW+zxOc4GDjhtKc4j0vWZJQvolpafbyS8ZLFHZJvs12gYA==
