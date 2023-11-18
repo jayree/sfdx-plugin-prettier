@@ -1,3 +1,10 @@
+## [1.3.32](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.31...v1.3.32) (2023-11-18)
+
+
+### Bug Fixes
+
+* **deps:** bump @salesforce/source-deploy-retrieve from 9.8.5 to 10.0.0 ([#746](https://github.com/jayree/sfdx-plugin-prettier/issues/746)) ([275fc21](https://github.com/jayree/sfdx-plugin-prettier/commit/275fc215fc741e8e05e3518e83f1001bff7840dc))
+
 ## [1.3.31](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.30...v1.3.31) (2023-11-17)
 
 
