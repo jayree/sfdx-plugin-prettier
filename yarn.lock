@@ -797,13 +797,13 @@
     wordwrap "^1.0.0"
     wrap-ansi "^7.0.0"
 
-"@oclif/plugin-command-snapshot@^5.0.2":
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-command-snapshot/-/plugin-command-snapshot-5.0.2.tgz#41e88d245e1ffb1822b4cb127df39f61672cf2b1"
-  integrity sha512-4Aun0P/K9uVC5JLmG968OJhDT5HMiOs4mmw7A2cWmf1Paw8zp4xZ40PvYOOKN86gaKukKFDTQ1sDuLBzqNhZow==
+"@oclif/plugin-command-snapshot@^5.0.3":
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-command-snapshot/-/plugin-command-snapshot-5.0.3.tgz#1ca2ccc173ba66d81e0e351f0cf640a9c3782f02"
+  integrity sha512-LbG7lxdKhaapv7nrgUoQU505PA92OU4SOMyczS74BatgUHjx4B0qXOe3VI2aKmd+SApPaLDe/QsGnm98gfZhmQ==
   dependencies:
     "@oclif/core" "^3.10.8"
-    "@types/lodash.difference" "^4.5.8"
+    "@types/lodash.difference" "^4.5.9"
     chalk "^5.3.0"
     just-diff "^5.2.0"
     lodash.difference "^4.5.0"
@@ -999,21 +999,21 @@
     semver "^7.5.4"
     ts-retry-promise "^0.7.1"
 
-"@salesforce/core@^6.1.3", "@salesforce/core@^6.2.0":
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/@salesforce/core/-/core-6.2.0.tgz#9bac72c0b48c733cf1d32d19f9775c34d895f207"
-  integrity sha512-HuggjBCLA18yXYHChnsrPDGbM+fAPx+9NeS7Dkx3/o1VhJ2hok5BUkvdaeoAVex/0Oc2J+KcvX/gqrjY51iOhQ==
+"@salesforce/core@^6.1.3", "@salesforce/core@^6.2.0", "@salesforce/core@^6.2.2":
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/@salesforce/core/-/core-6.2.2.tgz#c390c7c407e8916ad85a3e300d9d9e4fecfba207"
+  integrity sha512-R2ptk/+KSWDJOqdInxfzPTLF3V//vFtD4vQcjWIK9NaGCCq4ZwiF2gMpkBcKgDQneLUmva2NcmnzF3c51zQp5A==
   dependencies:
     "@salesforce/kit" "^3.0.15"
     "@salesforce/schemas" "^1.6.1"
     "@salesforce/ts-types" "^2.0.9"
-    "@types/semver" "^7.5.4"
+    "@types/semver" "^7.5.6"
     ajv "^8.12.0"
     change-case "^4.1.2"
     faye "^1.4.0"
     form-data "^4.0.0"
     js2xmlparser "^4.0.1"
-    jsforce "^2.0.0-beta.28"
+    jsforce "^2.0.0-beta.29"
     jsonwebtoken "9.0.2"
     jszip "3.10.1"
     pino "^8.16.2"
@@ -1090,12 +1090,12 @@
     chalk "^4"
     inquirer "^8.2.5"
 
-"@salesforce/source-deploy-retrieve@^10.0.2":
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/@salesforce/source-deploy-retrieve/-/source-deploy-retrieve-10.0.2.tgz#bfa522145eaad6a9ec601a2f5f004bee266736ae"
-  integrity sha512-Lj9QXoRBZANW4PNZpGwRA5CDztnczwrJyETcDADRFVzQG/HmCJKlRMVEKck+rs4ZB2PE891raNR2v5zo6vtvvg==
+"@salesforce/source-deploy-retrieve@^10.0.3":
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/@salesforce/source-deploy-retrieve/-/source-deploy-retrieve-10.0.3.tgz#bd95e15a78ef08e4ade5f96b2846c0137cccf8bb"
+  integrity sha512-7YgGd2CpOTYXdbtoB31eJEylYl1gbZvMqzbw8VjK1OVcywzuFUA43xznxzrSyFsBZZO6QAUAKyxoxxYR9goTyg==
   dependencies:
-    "@salesforce/core" "^6.1.3"
+    "@salesforce/core" "^6.2.0"
     "@salesforce/kit" "^3.0.15"
     "@salesforce/ts-types" "^2.0.9"
     fast-levenshtein "^3.0.0"
@@ -1338,10 +1338,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/lodash.difference@^4.5.8":
-  version "4.5.8"
-  resolved "https://registry.yarnpkg.com/@types/lodash.difference/-/lodash.difference-4.5.8.tgz#25acd0acfd3472c61b9d5629b014c21b921905fe"
-  integrity sha512-oamKsq2RK81RuwvG32/E8wRu/ldOz5XH04zeIyFDcJyGeebg17h0WOtyrkhDmINhr/2Noz6geO2AYfnQDxtapQ==
+"@types/lodash.difference@^4.5.9":
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/@types/lodash.difference/-/lodash.difference-4.5.9.tgz#69e82a68557779abac489585f43159997cab874c"
+  integrity sha512-MNlajcjtwzLpXk+cw38UkBvEXJNEPhULgS8A4EHwtUwT7f7yFH/SFKD0iw5Rfilwh60yJIgFo0vsMr7xsa5+aw==
   dependencies:
     "@types/lodash" "*"
 
@@ -1411,10 +1411,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/semver@^7.3.12", "@types/semver@^7.5.0", "@types/semver@^7.5.4":
-  version "7.5.5"
-  resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.5.5.tgz#deed5ab7019756c9c90ea86139106b0346223f35"
-  integrity sha512-+d+WYC1BxJ6yVOgUgzK8gWvp5qF8ssV5r4nsDcZWKRWcDQLQ619tvWAxJQYGgBrO1MnLJC7a5GtiYsAoQ47dJg==
+"@types/semver@^7.3.12", "@types/semver@^7.5.0", "@types/semver@^7.5.4", "@types/semver@^7.5.6":
+  version "7.5.6"
+  resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.5.6.tgz#c65b2bfce1bec346582c07724e3f8c1017a20339"
+  integrity sha512-dn1l8LaMea/IjDoHNd9J52uBbInB796CDffS6VdIxvqYCPSG0V0DzHp76GpaWnlhg88uYyPbXCDIowa86ybd5A==
 
 "@types/sinon@*", "@types/sinon@^10.0.20":
   version "10.0.20"
@@ -3724,10 +3724,10 @@ fromentries@^1.2.0:
   resolved "https://registry.yarnpkg.com/fromentries/-/fromentries-1.3.2.tgz#e4bca6808816bf8f93b52750f1127f5a6fd86e3a"
   integrity sha512-cHEpEQHUg0f8XdtZCc2ZAhrHzKzT0MrFUTcvx+hfxYu7rGMDc5SKoXFh+n4YigxsHXRzc6OrCshdR1bWH6HHyg==
 
-fs-extra@^11.0.0, fs-extra@^11.1.1:
-  version "11.1.1"
-  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-11.1.1.tgz#da69f7c39f3b002378b0954bb6ae7efdc0876e2d"
-  integrity sha512-MGIE4HOvQCeUCzmlHs0vXpih4ysz4wg9qiSAu6cd42lVwPbTM1TjV7RusoyQqMmk/95gdQZX72u+YW+c3eEpFQ==
+fs-extra@^11.0.0, fs-extra@^11.1.1, fs-extra@^11.2.0:
+  version "11.2.0"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-11.2.0.tgz#e70e17dfad64232287d01929399e0ea7c86b0e5b"
+  integrity sha512-PmDi3uwK5nFuXh7XDTlVnS17xJS7vW36is2+w3xcv8SVxiB4NyATf4ctkVY5bkSjX0Y4nbvZCq1/EjtEyr9ktw==
   dependencies:
     graceful-fs "^4.2.0"
     jsonfile "^6.0.1"
@@ -4870,10 +4870,10 @@ jsesc@~0.5.0:
   resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-0.5.0.tgz#e7dee66e35d6fc16f710fe91d5cf69f70f08911d"
   integrity sha512-uZz5UnB7u4T9LvwmFqXii7pZSouaRPorGs5who1Ip7VO0wxanFvBL7GkM6dTHlgX+jhBApRetaWpnDabOeTcnA==
 
-jsforce@^2.0.0-beta.28:
-  version "2.0.0-beta.28"
-  resolved "https://registry.yarnpkg.com/jsforce/-/jsforce-2.0.0-beta.28.tgz#5fd8d9b8e5efc798698793b147e00371f3d74e8f"
-  integrity sha512-tTmKRhr4yWNinhmurY/tiiltLFQq9RQ+gpYAt3wjFdCGjzd49/wqYQIFw4SsI3+iLjxXnc0uTgGwdAkDjxDWnA==
+jsforce@^2.0.0-beta.28, jsforce@^2.0.0-beta.29:
+  version "2.0.0-beta.29"
+  resolved "https://registry.yarnpkg.com/jsforce/-/jsforce-2.0.0-beta.29.tgz#0b59b026eb0b90dfb199a53656af32a4c8acc48f"
+  integrity sha512-Fq7xjOYOikyozZZDQNTfzsAdhcO0rUXwtavsjM+cCYUFiCMVOJJavgco303zOsJk3v8sdAYnGgHyKckLIhnyAg==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@babel/runtime-corejs3" "^7.12.5"
