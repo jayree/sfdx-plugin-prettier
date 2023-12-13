@@ -1,6 +1,6 @@
 {
   "name": "@jayree/sfdx-plugin-prettier",
-  "version": "1.3.35",
+  "version": "1.3.36",
   "description": "A Salesforce CLI plugin containing a hook that uses prettier to format Salesforce metadata source files retrieved or pulled from Salesforce orgs.",
   "author": "jayree <jayree.git@icloud.com>",
   "type": "module",
