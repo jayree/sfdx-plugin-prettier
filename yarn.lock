@@ -776,11 +776,12 @@
     wordwrap "^1.0.0"
     wrap-ansi "^7.0.0"
 
-"@oclif/core@^3.0.4", "@oclif/core@^3.15.0", "@oclif/core@^3.15.1", "@oclif/core@^3.3.1":
-  version "3.15.1"
-  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-3.15.1.tgz#e03fa775d658e76056150ac0c7b8097b6f51ab9c"
-  integrity sha512-d4457zVo2agLoJG97CmdY6M3BeP5sogBP3BtP65hUvJH6wA6Us1hdY3UiPPtD/ZzZImq7cATVMABuCF9tM+rWA==
+"@oclif/core@^3.0.4", "@oclif/core@^3.15.0", "@oclif/core@^3.15.1", "@oclif/core@^3.16.0", "@oclif/core@^3.3.1":
+  version "3.18.1"
+  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-3.18.1.tgz#a8c9ee3848ad663d5694bef6079116c70d32fc55"
+  integrity sha512-l0LsjzGcqjbUEdeSBX6bdZieVmEv82Q0W3StiyaDMEnPZ9KLH28HrLpcZg6d50mCYW9CUZNzmRo6qrCHWrgLKw==
   dependencies:
+    "@types/cli-progress" "^3.11.5"
     ansi-escapes "^4.3.2"
     ansi-styles "^4.3.0"
     cardinal "^2.1.1"
@@ -804,7 +805,6 @@
     strip-ansi "^6.0.1"
     supports-color "^8.1.1"
     supports-hyperlinks "^2.2.0"
-    tsconfck "^3.0.0"
     widest-line "^3.1.0"
     wordwrap "^1.0.0"
     wrap-ansi "^7.0.0"
@@ -858,14 +858,14 @@
     http-call "^5.2.2"
     lodash.template "^4.5.0"
 
-"@oclif/test@^3.1.7":
-  version "3.1.7"
-  resolved "https://registry.yarnpkg.com/@oclif/test/-/test-3.1.7.tgz#614a101a880b6a8f7ef7439686495a5a6d64b051"
-  integrity sha512-lEKq/VKqxwSribfvxXu112KTrgo/WsHzoFnUZRv9YJe7Ho6FCkmKs6n362KHWJgSnBMc4rXMJNJQe62HzHbeoA==
+"@oclif/test@^3.1.10":
+  version "3.1.10"
+  resolved "https://registry.yarnpkg.com/@oclif/test/-/test-3.1.10.tgz#8168c7643a393cb5d2a52f0b7133afc4564e5111"
+  integrity sha512-Jv91n9M9V8z/WheKFSQQ65Pc6mlackg4kO8XbXrIiK3kd/Z2xVojCB3Fq6dN19Ow3OZB0Uc0J+8H62XOR0Pblw==
   dependencies:
-    "@oclif/core" "^3.15.1"
-    chai "^4.3.10"
-    fancy-test "^3.0.7"
+    "@oclif/core" "^3.16.0"
+    chai "^4.4.0"
+    fancy-test "^3.0.8"
 
 "@octokit/auth-token@^2.4.4":
   version "2.5.0"
@@ -2251,10 +2251,10 @@ cardinal@^2.1.1:
     ansicolors "~0.3.2"
     redeyed "~2.1.0"
 
-chai@^4.3.10:
-  version "4.3.10"
-  resolved "https://registry.yarnpkg.com/chai/-/chai-4.3.10.tgz#d784cec635e3b7e2ffb66446a63b4e33bd390384"
-  integrity sha512-0UXG04VuVbruMUYbJ6JctvH0YnC/4q3/AkT18q4NaITo91CUm0liMS9VqzT9vZhVQ/1eqPanMWjBM+Juhfb/9g==
+chai@^4.3.10, chai@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/chai/-/chai-4.4.0.tgz#f9ac79f26726a867ac9d90a9b382120479d5f55b"
+  integrity sha512-x9cHNq1uvkCdU+5xTkNh5WtgD4e4yDFCsp9jVc7N7qVeKeftv3gO/ZrviX5d+3ZfxdYnZXZYujjRInu1RogU6A==
   dependencies:
     assertion-error "^1.1.0"
     check-error "^1.0.3"
@@ -3456,7 +3456,7 @@ external-editor@^3.0.3:
     iconv-lite "^0.4.24"
     tmp "^0.0.33"
 
-fancy-test@^3.0.7:
+fancy-test@^3.0.8:
   version "3.0.8"
   resolved "https://registry.yarnpkg.com/fancy-test/-/fancy-test-3.0.8.tgz#ca3919ebb07c1c0e5fb8e8953e02e2ed48600ef8"
   integrity sha512-vHkT59Kf0Byiqzwc2My1fD9VDYsAPkT+jVqdMqqtwtdLwz19x+hHI2oAxNwfyfEDSK+VrLB4+B96sZbOLVEHdA==
@@ -7792,11 +7792,6 @@ ts-retry-promise@^0.7.1:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/ts-retry-promise/-/ts-retry-promise-0.7.1.tgz#176d6eee6415f07b6c7c286d3657355e284a6906"
   integrity sha512-NhHOCZ2AQORvH42hOPO5UZxShlcuiRtm7P2jIq2L2RY3PBxw2mLnUsEdHrIslVBFya1v5aZmrR55lWkzo13LrQ==
-
-tsconfck@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/tsconfck/-/tsconfck-3.0.0.tgz#b469f1ced12973bbec3209a55ed8de3bb04223c9"
-  integrity sha512-w3wnsIrJNi7avf4Zb0VjOoodoO0woEqGgZGQm+LHH9przdUI+XDKsWAXwxHA1DaRTjeuZNcregSzr7RaA8zG9A==
 
 tsconfig-paths@^3.14.2:
   version "3.14.2"
