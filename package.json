@@ -77,7 +77,8 @@
         "releaseNotesPath": "https://github.com/jayree/sfdx-plugin-prettier/tree/main",
         "releaseNotesFilename": "CHANGELOG.md"
       }
-    }
+    },
+    "topicSeparator": " "
   },
   "repository": "jayree/sfdx-plugin-prettier",
   "scripts": {
