@@ -23,7 +23,7 @@
     "@oclif/plugin-command-snapshot": "^5.0.8",
     "@oclif/plugin-help": "^6.0.12",
     "@oclif/test": "^3.1.16",
-    "@salesforce/dev-scripts": "8.3.0",
+    "@salesforce/dev-scripts": "8.4.0",
     "@types/cli-progress": "^3.11.5",
     "@types/debug": "^4.1.12",
     "@types/fs-extra": "^11.0.4",
@@ -38,7 +38,6 @@
     "pinst": "^3.0.0",
     "prettier": "^3.2.5",
     "pretty-quick": "^4.0.0",
-    "shx": "^0.3.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   },
@@ -46,11 +45,12 @@
     "node": ">=16.0.0"
   },
   "files": [
+    "/CHANGELOG.md",
     "/lib",
     "/messages",
-    "/oclif.manifest.json",
-    "/CHANGELOG.md",
-    "/oclif.lock"
+    "/npm-shrinkwrap.json",
+    "/oclif.lock",
+    "/oclif.manifest.json"
   ],
   "homepage": "https://github.com/jayree/sfdx-plugin-prettier",
   "keywords": [
@@ -89,6 +89,7 @@
     "docs": "sf-docs",
     "format": "wireit",
     "lint": "wireit",
+    "postpack": "sf-clean",
     "prepack": "sf-prepack",
     "prepare": "patch-package && sf-install",
     "test": "wireit",
