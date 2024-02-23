@@ -10,7 +10,7 @@
     "@prettier/plugin-xml": "^3.3.1",
     "@salesforce/core": "^6.5.3",
     "@salesforce/sf-plugins-core": "^7.1.11",
-    "@salesforce/source-deploy-retrieve": "^10.3.9",
+    "@salesforce/source-deploy-retrieve": "^10.4.0",
     "cli-progress": "^3.12.0",
     "debug": "^4.3.4",
     "fs-extra": "^11.2.0",
