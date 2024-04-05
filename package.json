@@ -9,7 +9,7 @@
     "@jayree/changelog": "^1.1.10",
     "@oclif/core": "^3.25.1",
     "@prettier/plugin-xml": "^3.3.1",
-    "@salesforce/core": "^6.7.3",
+    "@salesforce/core": "^6.7.6",
     "@salesforce/kit": "^3.0.15",
     "@salesforce/sf-plugins-core": "^8.0.3",
     "@salesforce/source-deploy-retrieve": "^10.9.0",
