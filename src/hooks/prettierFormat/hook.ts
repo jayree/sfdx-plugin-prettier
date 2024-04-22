@@ -95,7 +95,7 @@ export const prettierFormat: HookFunction = async function (options: HookOptions
   const projectPath: string = await SfProject.resolveProjectPath();
   const projectJson = new SfProjectJson(SfProjectJson.getDefaultOptions());
   await projectJson.read();
-  const isEnabled = projectJson.get('plugins.sfdx-plugin-prettier.enabled') as boolean;
+  const isEnabled = (projectJson.get('plugins')?.['sfdx-plugin-prettier'] as { enabled: boolean })?.enabled;
   const configPath = await getCurrentStateFolderFilePath(projectPath, 'sfdx-plugin-prettier-config', true);
   const writeConfig = !(await fs.pathExists(configPath));
   if (isEnabled === undefined) {
