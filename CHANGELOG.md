@@ -1,3 +1,10 @@
+## [1.3.57](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.56...v1.3.57) (2024-04-23)
+
+
+### Bug Fixes
+
+* fix hook enable config ([1a4ea80](https://github.com/jayree/sfdx-plugin-prettier/commit/1a4ea80708323c7772fc405cfdca14cb1755ed38))
+
 ## [1.3.56](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.55...v1.3.56) (2024-04-19)
 
 
