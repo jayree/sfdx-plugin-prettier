@@ -26,7 +26,7 @@
     "@oclif/plugin-help": "^6.2.4",
     "@oclif/test": "^4.0.4",
     "@salesforce/dev-scripts": "10.2.2",
-    "@types/cli-progress": "^3.11.5",
+    "@types/cli-progress": "^3.11.6",
     "@types/debug": "^4.1.12",
     "@types/fs-extra": "^11.0.4",
     "@types/jsforce": "^1.11.5",
