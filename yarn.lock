@@ -1431,7 +1431,7 @@
   dependencies:
     "@xml-tools/parser" "^1.0.11"
 
-"@salesforce/core@^8.1.1", "@salesforce/core@^8.2.0":
+"@salesforce/core@^8.1.1", "@salesforce/core@^8.1.2", "@salesforce/core@^8.2.0":
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/@salesforce/core/-/core-8.2.0.tgz#34a5600c799a960c10f5d7a5920a3b7c50c7df28"
   integrity sha512-qe4dz1fuaWBKOVz2pTCBEtz6i1EXM96fO1xZ/AYg/pEbhWY79D8jiSDNaIkCYeq2FHH0AUvbSwFox+37qvq6NA==
@@ -1527,12 +1527,12 @@
     string-width "^7.1.0"
     terminal-link "^3.0.0"
 
-"@salesforce/source-deploy-retrieve@^12.1.5":
-  version "12.1.5"
-  resolved "https://registry.yarnpkg.com/@salesforce/source-deploy-retrieve/-/source-deploy-retrieve-12.1.5.tgz#b9d94d3420f62c70cfa566efde09c488ecc79b6e"
-  integrity sha512-2oiUfzfi07HnokqEW5IxtBQMQSwjovNNSPlj4b6yo8fBLeWfzeOzzX7f2l5v/cSEysUi5lj7vN+ZhGm2LexpvQ==
+"@salesforce/source-deploy-retrieve@^12.1.7":
+  version "12.1.7"
+  resolved "https://registry.yarnpkg.com/@salesforce/source-deploy-retrieve/-/source-deploy-retrieve-12.1.7.tgz#d1d0d149a52fd85483a48ae3ca55b8521f3a482e"
+  integrity sha512-YFM5lWuRYOGsx333ctgbUegie3+725vR0JONdKCdlw9kkCYOCdZ+bUeTJNtXxCsZusIXQNganU9ATOU0fYTszQ==
   dependencies:
-    "@salesforce/core" "^8.1.1"
+    "@salesforce/core" "^8.1.2"
     "@salesforce/kit" "^3.1.6"
     "@salesforce/ts-types" "^2.0.10"
     fast-levenshtein "^3.0.0"
