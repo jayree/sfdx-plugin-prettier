@@ -23,7 +23,7 @@ type HookOptions = {
 
 // eslint-disable-next-line @typescript-eslint/require-await
 export const scopedPostRetrieve: HookFunction = async function (options) {
-  debug(`called 'prettier:scopedPostRetrieve' by: ${options.Command.id}`);
+  debug(`called 'prettier:scopedPostRetrieve' by: ${options.Command.id as string}`);
 
   if (env.getBoolean('SFDX_DISABLE_PRETTIER')) {
     debug('found: SFDX_DISABLE_PRETTIER=true');
