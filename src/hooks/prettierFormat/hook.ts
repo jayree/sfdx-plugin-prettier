@@ -77,7 +77,7 @@ async function getCurrentStateFolderFilePath(projectPath: string, file: string, 
 }
 
 export const prettierFormat: HookFunction = async function (options: HookOptions) {
-  debug(`called 'prettier:prettierFormat' by: ${options.Command?.id}`);
+  debug(`called 'prettier:prettierFormat' by: ${options.Command?.id as string}`);
   if (!Array.isArray(options.result)) {
     debug({ result: options.result });
     debug('options.result is not an array of file paths - exit');
