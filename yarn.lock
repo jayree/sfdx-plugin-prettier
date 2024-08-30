@@ -1471,14 +1471,14 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.3.tgz#e45e384e4b8ec16bce2fd903af78450f6bf7ec98"
   integrity sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA==
 
-"@jayree/changelog@^1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@jayree/changelog/-/changelog-1.2.2.tgz#34c4176a3b93d9a7bdf48eb58ddf99af19cf0607"
-  integrity sha512-uVEUSc2w//xUL+f40mujuIQPUSOgdmQZxTyrTpgNN4Bk2Y3vL8bxj3PgQZvfTA6PgRP/XxruTKu/1IBC1kxNvA==
+"@jayree/changelog@^1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@jayree/changelog/-/changelog-1.2.3.tgz#5d394067b8843a47aa434f07e1ac53e7e428338d"
+  integrity sha512-12amQr8sNbxCAhwZGR7AYTFswpKuMKJkSAKdmV+MLs/TDjGKZQnsp25HRd3TCuNeRZO5CNXw4DJxfoS2jGVqDQ==
   dependencies:
     debug "^4.3.6"
     fs-extra "^11.2.0"
-    marked "^12.0.2"
+    marked "^13.0.3"
     marked-terminal "^7.1.0"
     semver "^7.6.3"
     semver-compare "^1.0.0"
@@ -6023,12 +6023,7 @@ marked-terminal@^7.1.0:
     node-emoji "^2.1.3"
     supports-hyperlinks "^3.0.0"
 
-marked@^12.0.2:
-  version "12.0.2"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-12.0.2.tgz#b31578fe608b599944c69807b00f18edab84647e"
-  integrity sha512-qXUm7e/YKFoqFPYPa3Ukg9xlI5cyAtGmyEIzMfW//m6kXwCy2Ps9DYf5ioijFKQ8qyuscrHoY04iJGctu2Kg0Q==
-
-marked@^13.0.0:
+marked@^13.0.0, marked@^13.0.3:
   version "13.0.3"
   resolved "https://registry.yarnpkg.com/marked/-/marked-13.0.3.tgz#5c5b4a5d0198060c7c9bc6ef9420a7fed30f822d"
   integrity sha512-rqRix3/TWzE9rIoFGIn8JmsVfhiuC8VIQ8IdX5TfzmeBucdY05/0UlzKaw0eVtpcN/OdVFpBk7CjKGo9iHJ/zA==
