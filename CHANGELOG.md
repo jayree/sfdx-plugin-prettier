@@ -1,3 +1,10 @@
+## [1.3.97](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.96...v1.3.97) (2025-01-11)
+
+
+### Bug Fixes
+
+* **deps:** bump ignore from 5.3.2 to 7.0.0 ([#1191](https://github.com/jayree/sfdx-plugin-prettier/issues/1191)) ([0439970](https://github.com/jayree/sfdx-plugin-prettier/commit/0439970291adbcd2db2195f3acfa8e362e31029a))
+
 ## [1.3.96](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.95...v1.3.96) (2025-01-10)
 
 
