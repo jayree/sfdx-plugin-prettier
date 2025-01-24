@@ -1,3 +1,11 @@
+## [1.3.99](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.98...v1.3.99) (2025-01-24)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 4.2.3 to 4.2.4 ([#1215](https://github.com/jayree/sfdx-plugin-prettier/issues/1215)) ([211b938](https://github.com/jayree/sfdx-plugin-prettier/commit/211b938832ede804c143c4744a633a9b2422efb3))
+* **deps:** bump @salesforce/source-deploy-retrieve ([#1216](https://github.com/jayree/sfdx-plugin-prettier/issues/1216)) ([fbf0be0](https://github.com/jayree/sfdx-plugin-prettier/commit/fbf0be020f7b4443040fb529f42650a9416e8d09))
+
 ## [1.3.98](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.97...v1.3.98) (2025-01-17)
 
 
