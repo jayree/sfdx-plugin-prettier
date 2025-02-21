@@ -1,3 +1,11 @@
+## [1.3.103](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.102...v1.3.103) (2025-02-21)
+
+
+### Bug Fixes
+
+* **deps:** bump @jayree/changelog from 1.2.5 to 1.2.6 ([#1246](https://github.com/jayree/sfdx-plugin-prettier/issues/1246)) ([6ce8a27](https://github.com/jayree/sfdx-plugin-prettier/commit/6ce8a273d43ba5fdd388338a3e80d2ac977ae497))
+* **deps:** bump @oclif/core from 4.2.6 to 4.2.7 ([#1245](https://github.com/jayree/sfdx-plugin-prettier/issues/1245)) ([d52f6fd](https://github.com/jayree/sfdx-plugin-prettier/commit/d52f6fd9f8485200ba332c6d746029beef717bb1))
+
 ## [1.3.102](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.101...v1.3.102) (2025-02-14)
 
 
