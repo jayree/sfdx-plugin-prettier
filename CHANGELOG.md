@@ -1,3 +1,53 @@
+## [1.3.108](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.107...v1.3.108) (2025-03-28)
+
+
+### Bug Fixes
+
+* **deps:** bump @jayree/changelog from 1.2.6 to 1.2.7 ([#1275](https://github.com/jayree/sfdx-plugin-prettier/issues/1275)) ([fd4b240](https://github.com/jayree/sfdx-plugin-prettier/commit/fd4b240b321c5000e9946e63a3cb92def4af39cb))
+* **deps:** bump @salesforce/core from 8.8.6 to 8.8.7 ([#1278](https://github.com/jayree/sfdx-plugin-prettier/issues/1278)) ([fd99048](https://github.com/jayree/sfdx-plugin-prettier/commit/fd990485ad03e6e598120d2544cedc44b8678128))
+
+## [1.3.107](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.106...v1.3.107) (2025-03-21)
+
+
+### Bug Fixes
+
+* **deps:** bump @salesforce/core from 8.8.5 to 8.8.6 ([#1272](https://github.com/jayree/sfdx-plugin-prettier/issues/1272)) ([ed6cf9c](https://github.com/jayree/sfdx-plugin-prettier/commit/ed6cf9ca49df8fa43b079665aa4f03559bc2df58))
+* **deps:** bump @salesforce/sf-plugins-core from 12.2.0 to 12.2.1 ([#1270](https://github.com/jayree/sfdx-plugin-prettier/issues/1270)) ([e2eeaa3](https://github.com/jayree/sfdx-plugin-prettier/commit/e2eeaa3852d1078fb0becb653d1c8967dfb99b3b))
+
+## [1.3.106](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.105...v1.3.106) (2025-03-14)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 4.2.8 to 4.2.10 ([#1264](https://github.com/jayree/sfdx-plugin-prettier/issues/1264)) ([34bcd98](https://github.com/jayree/sfdx-plugin-prettier/commit/34bcd9867ab3ba8fde41b3fe7dff159e8a55fcad))
+* **deps:** bump prettier-plugin-apex from 2.2.4 to 2.2.5 ([#1265](https://github.com/jayree/sfdx-plugin-prettier/issues/1265)) ([226d69c](https://github.com/jayree/sfdx-plugin-prettier/commit/226d69c1ac02ff7d97955f785a83cb04c4c0dd4a))
+
+## [1.3.105](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.104...v1.3.105) (2025-03-07)
+
+
+### Bug Fixes
+
+* **deps:** bump @salesforce/core from 8.8.4 to 8.8.5 ([#1259](https://github.com/jayree/sfdx-plugin-prettier/issues/1259)) ([5ed9198](https://github.com/jayree/sfdx-plugin-prettier/commit/5ed919853c66a4131e8ebc1e0b2e9c1f0ffdf2ad))
+* **deps:** bump prettier from 3.5.2 to 3.5.3 ([#1261](https://github.com/jayree/sfdx-plugin-prettier/issues/1261)) ([fd8ca5c](https://github.com/jayree/sfdx-plugin-prettier/commit/fd8ca5cddf23dc04a0ccb5e5efd943edff50e61c))
+
+## [1.3.104](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.103...v1.3.104) (2025-02-28)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 4.2.7 to 4.2.8 ([#1257](https://github.com/jayree/sfdx-plugin-prettier/issues/1257)) ([3ec4300](https://github.com/jayree/sfdx-plugin-prettier/commit/3ec43001e423329cea355706bea03eaed0c00bb9))
+* **deps:** bump @salesforce/core from 8.8.2 to 8.8.4 ([#1249](https://github.com/jayree/sfdx-plugin-prettier/issues/1249)) ([efea7b3](https://github.com/jayree/sfdx-plugin-prettier/commit/efea7b321b82d796fe46a71a7e408eb2007ae159))
+* **deps:** bump @salesforce/sf-plugins-core from 12.1.4 to 12.2.0 ([#1253](https://github.com/jayree/sfdx-plugin-prettier/issues/1253)) ([771c877](https://github.com/jayree/sfdx-plugin-prettier/commit/771c87753c9e8cdfa76247230331084e7638d358))
+* **deps:** bump prettier from 3.5.1 to 3.5.2 ([#1252](https://github.com/jayree/sfdx-plugin-prettier/issues/1252)) ([93a5b97](https://github.com/jayree/sfdx-plugin-prettier/commit/93a5b97df36c24cf1cc4f6c6d3f60e385f9170d8))
+
+## [1.3.103](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.102...v1.3.103) (2025-02-21)
+
+
+### Bug Fixes
+
+* **deps:** bump @jayree/changelog from 1.2.5 to 1.2.6 ([#1246](https://github.com/jayree/sfdx-plugin-prettier/issues/1246)) ([6ce8a27](https://github.com/jayree/sfdx-plugin-prettier/commit/6ce8a273d43ba5fdd388338a3e80d2ac977ae497))
+* **deps:** bump @oclif/core from 4.2.6 to 4.2.7 ([#1245](https://github.com/jayree/sfdx-plugin-prettier/issues/1245)) ([d52f6fd](https://github.com/jayree/sfdx-plugin-prettier/commit/d52f6fd9f8485200ba332c6d746029beef717bb1))
+
 ## [1.3.102](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.101...v1.3.102) (2025-02-14)
 
 
