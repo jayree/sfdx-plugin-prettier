@@ -50,9 +50,9 @@ async function getCurrentStateFolderFilePath(projectPath: string, file: string, 
 
   if (!(await fs.pathExists(sfPath))) {
     if (await fs.pathExists(join(projectPath, '.gitignore'))) {
-      const gitIgnore: Ignore = ignore
-        .default()
-        .add(Buffer.from(await fs.readFile(join(projectPath, '.gitignore'))).toString());
+      const gitIgnore: Ignore = ignore().add(
+        Buffer.from(await fs.readFile(join(projectPath, '.gitignore'))).toString(),
+      );
       if (!gitIgnore.ignores(join('.sf', file))) {
         if (gitIgnore.ignores(join('.sfdx', file))) {
           debug('use sfdx state folder');
