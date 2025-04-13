@@ -1,3 +1,10 @@
+## [1.3.110](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.109...v1.3.110) (2025-04-13)
+
+
+### Bug Fixes
+
+* **deps:** bump @jayree/changelog from 1.2.7 to 1.2.8 ([#1288](https://github.com/jayree/sfdx-plugin-prettier/issues/1288)) ([06f5a5b](https://github.com/jayree/sfdx-plugin-prettier/commit/06f5a5bf55a33e9e100919c889ceb6880569ef7b))
+
 ## [1.3.109](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.108...v1.3.109) (2025-04-12)
 
 
