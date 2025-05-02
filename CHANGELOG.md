@@ -1,3 +1,10 @@
+## [1.3.113](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.112...v1.3.113) (2025-05-02)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 4.2.10 to 4.3.0 ([#1302](https://github.com/jayree/sfdx-plugin-prettier/issues/1302)) ([55802b7](https://github.com/jayree/sfdx-plugin-prettier/commit/55802b7c3ef4b432c01b4ea9b3d03f673800b5b5))
+
 ## [1.3.112](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.111...v1.3.112) (2025-04-25)
 
 
