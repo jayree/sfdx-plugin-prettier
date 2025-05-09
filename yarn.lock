@@ -1555,14 +1555,14 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.3.tgz#e45e384e4b8ec16bce2fd903af78450f6bf7ec98"
   integrity sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA==
 
-"@jayree/changelog@^1.2.8":
-  version "1.2.8"
-  resolved "https://registry.yarnpkg.com/@jayree/changelog/-/changelog-1.2.8.tgz#e5ea5d49c3dda29a5a284dda444b08c37ce0225c"
-  integrity sha512-uqD1ExM7JNyMcd1cbzXH55b7DqZZ69/f6TASKYGUKBR5BQ2jYXpY4i+KckAFaeebEPQhWW+KIJtCYj4tBWn7BA==
+"@jayree/changelog@^1.2.9":
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/@jayree/changelog/-/changelog-1.2.9.tgz#463857cb3b8d187a0e3b05c0c6628eeed7f3bab5"
+  integrity sha512-XmRXMDY/Dga1DMmpNNcOkyAqVjpR6d92X8hfnC1Vw3nY12IJ2rY/Zf1AR1U9IUURVwpGT3OR+9odXe3N+TnOyQ==
   dependencies:
     debug "^4.4.0"
     fs-extra "^11.3.0"
-    marked "^15.0.8"
+    marked "^15.0.11"
     marked-terminal "^7.3.0"
     semver "^7.7.1"
     semver-compare "^1.0.0"
@@ -6303,10 +6303,10 @@ marked@^13.0.0:
   resolved "https://registry.yarnpkg.com/marked/-/marked-13.0.3.tgz#5c5b4a5d0198060c7c9bc6ef9420a7fed30f822d"
   integrity sha512-rqRix3/TWzE9rIoFGIn8JmsVfhiuC8VIQ8IdX5TfzmeBucdY05/0UlzKaw0eVtpcN/OdVFpBk7CjKGo9iHJ/zA==
 
-marked@^15.0.8:
-  version "15.0.8"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-15.0.8.tgz#39873a3fdf91a520111e48aeb2ef3746d58d7166"
-  integrity sha512-rli4l2LyZqpQuRve5C0rkn6pj3hT8EWPC+zkAxFTAJLxRbENfTAhEQq9itrmf1Y81QtAX5D/MYlGlIomNgj9lA==
+marked@^15.0.11:
+  version "15.0.11"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-15.0.11.tgz#08a8d12c285e16259e44287b89ce0d871c9d55e8"
+  integrity sha512-1BEXAU2euRCG3xwgLVT1y0xbJEld1XOrmRJpUwRCcy7rxhSCwMrmEu9LXoPhHSCJG41V7YcQ2mjKRr5BA3ITIA==
 
 mdurl@^2.0.0:
   version "2.0.0"
