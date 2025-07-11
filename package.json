@@ -8,7 +8,7 @@
   "dependencies": {
     "@jayree/changelog": "^1.2.11",
     "@oclif/core": "^4.5.0",
-    "@prettier/plugin-xml": "^3.4.1",
+    "@prettier/plugin-xml": "^3.4.2",
     "@salesforce/core": "^8.17.0",
     "@salesforce/kit": "^3.2.3",
     "@salesforce/sf-plugins-core": "^12.2.3",
