@@ -61,7 +61,7 @@
     "prettier",
     "hook"
   ],
-  "license": "BSD-3-Clause",
+  "license": "Apache-2.0",
   "oclif": {
     "commands": "./lib/commands",
     "bin": "sfdx",
@@ -90,6 +90,7 @@
     "clean-all": "sf-clean all",
     "compile": "wireit",
     "docs": "sf-docs",
+    "fix-license": "eslint src test --fix --rule \"header/header: [2]\"",
     "format": "wireit",
     "lint": "wireit",
     "postpack": "sf-clean --ignore-signing-artifacts",
