@@ -23,7 +23,7 @@ $ npm install -g @jayree/sfdx-plugin-prettier
 $ sfdx COMMAND
 running command...
 $ sfdx (--version)
-@jayree/sfdx-plugin-prettier/1.3.135 linux-x64 node-v22.19.0
+@jayree/sfdx-plugin-prettier/1.3.136 linux-x64 node-v22.20.0
 $ sfdx --help [COMMAND]
 USAGE
   $ sfdx COMMAND
