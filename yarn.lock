@@ -2410,10 +2410,10 @@
   resolved "https://registry.yarnpkg.com/@types/istanbul-lib-coverage/-/istanbul-lib-coverage-2.0.6.tgz#7739c232a1fee9b4d3ce8985f314c0c6d33549d7"
   integrity sha512-2QF/t/auWm0lsy8XtKVPG19v3sSOQlJe/YHZgfjb/KBBHOGSV+J2q/S671rcq9uTBrLAXmZpqJiaQbMT+zNU1w==
 
-"@types/jsforce@^1.11.5":
-  version "1.11.5"
-  resolved "https://registry.yarnpkg.com/@types/jsforce/-/jsforce-1.11.5.tgz#644d299d81309580607139480051c27c1ce8c4d9"
-  integrity sha512-68uPAse+nDBDnh421L9ngd7jn11hST+Gz2CJMz5l+M4UVD2fYJsgdZQReZf7bTZQsIUdnr0sAp71ihLxAusZZA==
+"@types/jsforce@^1.11.6":
+  version "1.11.6"
+  resolved "https://registry.yarnpkg.com/@types/jsforce/-/jsforce-1.11.6.tgz#445524428fa863df9e83afa761dde2d0afd35c0d"
+  integrity sha512-AVCSPccfb/L1uuzSneNx3f/W7i9vI3fyzjLZPhZ2sF+0HevpM9d8a74n915ONK02C20hOncKbUQYI4Wz9NUelA==
   dependencies:
     "@types/node" ">=4.0"
 
