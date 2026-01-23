@@ -17,7 +17,7 @@
     "debug": "^4.4.1",
     "fs-extra": "^11.3.3",
     "ignore": "^7.0.4",
-    "prettier": "^3.8.0",
+    "prettier": "^3.8.1",
     "prettier-plugin-apex": "^2.2.6",
     "tslib": "^2.8.1"
   },
@@ -39,7 +39,7 @@
     "oclif": "^4.22.65",
     "patch-package": "^8.0.1",
     "pinst": "^3.0.0",
-    "prettier": "^3.8.0",
+    "prettier": "^3.8.1",
     "pretty-quick": "^4.2.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
