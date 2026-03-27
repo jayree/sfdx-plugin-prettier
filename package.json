@@ -10,7 +10,7 @@
     "@oclif/core": "^4.10.0",
     "@prettier/plugin-xml": "^3.4.2",
     "@salesforce/core": "^8.27.1",
-    "@salesforce/kit": "^3.2.4",
+    "@salesforce/kit": "^3.2.6",
     "@salesforce/sf-plugins-core": "^12.2.6",
     "@salesforce/source-deploy-retrieve": "^12.31.22",
     "cli-progress": "^3.12.0",
