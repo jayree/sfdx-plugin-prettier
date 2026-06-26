@@ -18,7 +18,7 @@
     "fs-extra": "^11.3.5",
     "ignore": "^7.0.4",
     "prettier": "^3.8.4",
-    "prettier-plugin-apex": "^2.2.6",
+    "prettier-plugin-apex": "^2.3.0",
     "tslib": "^2.8.1"
   },
   "devDependencies": {

@@ -928,17 +928,39 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.57.0.tgz#a5417ae8427873f1dd08b70b3574b453e67b5f7f"
   integrity sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==
 
-"@hapi/hoek@^9.0.0", "@hapi/hoek@^9.3.0":
-  version "9.3.0"
-  resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.3.0.tgz#8368869dcb735be2e7f5cb7647de78e167a251fb"
-  integrity sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==
-
-"@hapi/topo@^5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@hapi/topo/-/topo-5.1.0.tgz#dc448e332c6c6e37a4dc02fd84ba8d44b9afb012"
-  integrity sha512-foQZKJig7Ob0BMAYBfcJk8d77QtOe7Wo4ox7ff1lQYoNNAb6jwcY1ncdoy2e9wQZzvNy7ODZCYJkK8kzmcAnAg==
+"@hapi/address@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@hapi/address/-/address-5.1.1.tgz#e9925fc1b65f5cc3fbea821f2b980e4652e84cb6"
+  integrity sha512-A+po2d/dVoY7cYajycYI43ZbYMXukuopIsqCjh5QzsBCipDtdofHntljDlpccMjIfTy6UOkg+5KPriwYch2bXA==
   dependencies:
-    "@hapi/hoek" "^9.0.0"
+    "@hapi/hoek" "^11.0.2"
+
+"@hapi/formula@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@hapi/formula/-/formula-3.0.2.tgz#81b538060ee079481c906f599906d163c4badeaf"
+  integrity sha512-hY5YPNXzw1He7s0iqkRQi+uMGh383CGdyyIGYtB+W5N3KHPXoqychklvHhKCC9M3Xtv0OCs/IHw+r4dcHtBYWw==
+
+"@hapi/hoek@^11.0.2", "@hapi/hoek@^11.0.7":
+  version "11.0.7"
+  resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-11.0.7.tgz#56a920793e0a42d10e530da9a64cc0d3919c4002"
+  integrity sha512-HV5undWkKzcB4RZUusqOpcgxOaq6VOAH7zhhIr2g3G8NF/MlFO75SjOr2NfuSx0Mh40+1FqCkagKLJRykUWoFQ==
+
+"@hapi/pinpoint@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@hapi/pinpoint/-/pinpoint-2.0.1.tgz#32077e715655fc00ab8df74b6b416114287d6513"
+  integrity sha512-EKQmr16tM8s16vTT3cA5L0kZZcTMU5DUOZTuvpnY738m+jyP3JIUj+Mm1xc1rsLkGBQ/gVnfKYPwOmPg1tUR4Q==
+
+"@hapi/tlds@^1.1.1":
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/@hapi/tlds/-/tlds-1.1.7.tgz#005d10761e7a946aedae32a418b8f1dafd3f998e"
+  integrity sha512-MgNjRwy9Ti92yVAixLmDc8dd1bJIKwO9qlWCfFQRwRmUEDPQHYn4G6hwPFvFGUTzAa0FsS+inMjLin7GnyBRhA==
+
+"@hapi/topo@^6.0.2":
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/@hapi/topo/-/topo-6.0.2.tgz#f219c1c60da8430228af4c1f2e40c32a0d84bbb4"
+  integrity sha512-KR3rD5inZbGMrHmgPxsJ9dbi6zEK+C3ZwUwTa+eMwWLz7oijWUTWD2pMSNNYJAU6Qq+65NkxXjqHr/7LM2Xkqg==
+  dependencies:
+    "@hapi/hoek" "^11.0.2"
 
 "@humanwhocodes/config-array@^0.11.14":
   version "0.11.14"
@@ -1533,25 +1555,25 @@
     "@pnpm/network.ca-file" "^1.0.1"
     config-chain "^1.1.11"
 
-"@prettier-apex/apex-ast-serializer-darwin-arm64@2.2.6":
-  version "2.2.6"
-  resolved "https://registry.yarnpkg.com/@prettier-apex/apex-ast-serializer-darwin-arm64/-/apex-ast-serializer-darwin-arm64-2.2.6.tgz#aa196c913b55804a63398882ef0b13491a069f4a"
-  integrity sha512-XzrGnEVQq/JH/rKPktpdL8/agocjDCnSrY4MuHxMs5V3OnV/4MJdMHp0frQhqOjbhnUIjewypX5XWcVi0xqRBQ==
+"@prettier-apex/apex-ast-serializer-darwin-arm64@2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@prettier-apex/apex-ast-serializer-darwin-arm64/-/apex-ast-serializer-darwin-arm64-2.3.0.tgz#32b8a14adca3d8f926a8683cf127841706804e05"
+  integrity sha512-o2V3yYUHAj6v+xXYCgLzvvqKNrpV3VO4ZHdbLNkZm+ilSfa8CLu5HDB4+YMZVLgED0YLAHCNYdo6l1UaLS1WhQ==
 
-"@prettier-apex/apex-ast-serializer-darwin-x64@2.2.6":
-  version "2.2.6"
-  resolved "https://registry.yarnpkg.com/@prettier-apex/apex-ast-serializer-darwin-x64/-/apex-ast-serializer-darwin-x64-2.2.6.tgz#d3ad65fce2329701fc470207273a3de1435d9340"
-  integrity sha512-bCOJq90UAL+qCEMbXAuFBULjK04E/PAFL+OXgO9haeNHB41HeoUgNhqAboTQdyz2szHaM3FQ1N6BOdUIjTraXg==
+"@prettier-apex/apex-ast-serializer-darwin-x64@2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@prettier-apex/apex-ast-serializer-darwin-x64/-/apex-ast-serializer-darwin-x64-2.3.0.tgz#07f13e97c69cc160d123acf69d483f23b0974c5e"
+  integrity sha512-5RlADJkonU7ldQvdi2RfYP4RmxuXs5PzoSRFjbCnVfyIWExF7pM5eEHoGGpTOFmxmDivI4AjsK5m9WSCwrFBBA==
 
-"@prettier-apex/apex-ast-serializer-linux-x64@2.2.6":
-  version "2.2.6"
-  resolved "https://registry.yarnpkg.com/@prettier-apex/apex-ast-serializer-linux-x64/-/apex-ast-serializer-linux-x64-2.2.6.tgz#9dcee71150528fc8fcce0f9e08f50eb99ed2e1d5"
-  integrity sha512-sErKpugEvmF7Iwdk1wqQfWFGQ4+LFDKQ+ek5kunRJfsVLs6yQd6qIaiFqqwYxl/4vU6O6+McaON2eVhwjF8YGg==
+"@prettier-apex/apex-ast-serializer-linux-x64@2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@prettier-apex/apex-ast-serializer-linux-x64/-/apex-ast-serializer-linux-x64-2.3.0.tgz#611de104b0756a69f42f677b100288ad744ceda9"
+  integrity sha512-NXqzeg/Rb1jaduI7sMfez/I5rl+2vZNWTcQSpgkt7artQ/jah41etAolMe7FYof3j8R0s1pwzY7zkLmLdYVBkw==
 
-"@prettier-apex/apex-ast-serializer-win32-x64@2.2.6":
-  version "2.2.6"
-  resolved "https://registry.yarnpkg.com/@prettier-apex/apex-ast-serializer-win32-x64/-/apex-ast-serializer-win32-x64-2.2.6.tgz#17eca6d9cfe438f132bf282d1cc37fc1de6a84b2"
-  integrity sha512-liKeEt89l0cJb8mmgy0kU157jV/7FpF8+oUR4Ic4Tu2DainBxDRcBQICBR0+NmKJNUGTY6/MnwFbuld25laNdg==
+"@prettier-apex/apex-ast-serializer-win32-x64@2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@prettier-apex/apex-ast-serializer-win32-x64/-/apex-ast-serializer-win32-x64-2.3.0.tgz#0a6e9a0ee1ec6a16bd043fa75141ea52c458410a"
+  integrity sha512-4wXOWPNQuM0FVpVOJG5XTNm7qV0CQOmlsq7XxUPIXvYq/fJ4gMxdII8pLVBe2qQdH22SAiVSLPSFggzCZ5GwyQ==
 
 "@prettier/plugin-xml@^3.4.2":
   version "3.4.2"
@@ -1687,23 +1709,6 @@
   dependencies:
     "@types/hast" "^3.0.4"
 
-"@sideway/address@^4.1.5":
-  version "4.1.5"
-  resolved "https://registry.yarnpkg.com/@sideway/address/-/address-4.1.5.tgz#4bc149a0076623ced99ca8208ba780d65a99b9d5"
-  integrity sha512-IqO/DUQHUkPeixNQ8n0JA6102hT9CmaljNTPmQ1u8MEhBo/R4Q8eKLN/vGZxuebwOroDB4cbpjheD4+/sKFK4Q==
-  dependencies:
-    "@hapi/hoek" "^9.0.0"
-
-"@sideway/formula@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@sideway/formula/-/formula-3.0.1.tgz#80fcbcbaf7ce031e0ef2dd29b1bfc7c3f583611f"
-  integrity sha512-/poHZJJVjx3L+zVD6g9KgHfYnb443oi7wLu/XKojDviHy6HOEOA6z1Trk5aR1dGcmPenJEgb2sK2I80LeS3MIg==
-
-"@sideway/pinpoint@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@sideway/pinpoint/-/pinpoint-2.0.0.tgz#cff8ffadc372ad29fd3f78277aeb29e632cc70df"
-  integrity sha512-RNiOoTPkptFtSVzQevY/yWtZwf/RxyVnPy/OcA9HBM3MlGDnBEYL5B41H0MTn0Uec8Hi+2qUtTfG2WWZBmMejQ==
-
 "@sindresorhus/is@^4", "@sindresorhus/is@^4.0.0", "@sindresorhus/is@^4.6.0":
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-4.6.0.tgz#3c7c9c46e678feefe7a2e5bb609d3dbd665ffb3f"
@@ -1828,6 +1833,11 @@
   dependencies:
     "@smithy/util-buffer-from" "^2.2.0"
     tslib "^2.6.2"
+
+"@standard-schema/spec@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@standard-schema/spec/-/spec-1.1.0.tgz#a79b55dbaf8604812f52d140b2c9ab41bc150bb8"
+  integrity sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==
 
 "@szmarczak/http-timer@^4.0.5":
   version "4.0.6"
@@ -2536,14 +2546,15 @@ available-typed-arrays@^1.0.6, available-typed-arrays@^1.0.7:
   dependencies:
     possible-typed-array-names "^1.0.0"
 
-axios@^1.7.7:
-  version "1.7.7"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-1.7.7.tgz#2f554296f9892a72ac8d8e4c5b79c14a91d0a47f"
-  integrity sha512-S4kL7XrjgBmvdGut0sN3yJxqYzrDOnivkBiN0OFs6hLiUam3UPvswUo0kqGyhqUZGEOytHyumEdXsAkgCOUf3Q==
+axios@^1.16.0:
+  version "1.18.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.18.1.tgz#d63f9863bcd8938815c86f9e2abd380189d96dfe"
+  integrity sha512-3nTvFlvpn9Zu/RkHUqtc7/+al4UpRW5az71ap5zccp6e8RAYEzhMTecX8Dz1wWDYrPpUoB1HAQEGEAEvUr7S9g==
   dependencies:
-    follow-redirects "^1.15.6"
-    form-data "^4.0.0"
-    proxy-from-env "^1.1.0"
+    follow-redirects "^1.16.0"
+    form-data "^4.0.5"
+    https-proxy-agent "^5.0.1"
+    proxy-from-env "^2.1.0"
 
 balanced-match@^1.0.0:
   version "1.0.2"
@@ -3339,7 +3350,7 @@ delayed-stream@~1.0.0:
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==
 
-detect-newline@^3.0.0:
+detect-newline@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/detect-newline/-/detect-newline-3.1.0.tgz#576f5dfc63ae1a192ff192d8ad3af6308991b651"
   integrity sha512-TLz+x/vEXm/Y7P7wn1EJFNLxYpUD4TgMosxY6fAVJUnJMbupHBOncxyWUG9OpTaH9EBD7uFI5LfEgmMOc54DsA==
@@ -4154,10 +4165,10 @@ flatted@^3.2.9:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.3.1.tgz#21db470729a6734d4997002f439cb308987f567a"
   integrity sha512-X8cqMLLie7KsNUDSdzeN8FYK9rEt4Dt67OsG/DNGnYTSDBG4uFAJFBnUeiV+zCVAvwFy56IjM9sH51jVaEhNxw==
 
-follow-redirects@^1.15.6:
-  version "1.15.9"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.9.tgz#a604fa10e443bf98ca94228d9eebcc2e8a2c8ee1"
-  integrity sha512-gew4GsXizNgdoRyqmyfMHyAmXsZDk6mHkSxZFCzW9gwlbtOW44CDtYavM+y+72qD/Vq2l550kMF52DT8fOLJqQ==
+follow-redirects@^1.16.0:
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.16.0.tgz#28474a159d3b9d11ef62050a14ed60e4df6d61bc"
+  integrity sha512-y5rN/uOsadFT/JfYwhxRS5R7Qce+g3zG97+JrtFZlC9klX/W5hD7iiLzScI4nZqUS7DNUdhPgw4xI8W2LuXlUw==
 
 for-each@^0.3.3:
   version "0.3.3"
@@ -4187,7 +4198,7 @@ form-data-encoder@^2.1.2:
   resolved "https://registry.yarnpkg.com/form-data-encoder/-/form-data-encoder-2.1.4.tgz#261ea35d2a70d48d30ec7a9603130fa5515e9cd5"
   integrity sha512-yDYSgNMraqvnxiEXO4hi88+YZxaHC6QKzb5N84iRCTDeRO7ZALpir/lVmf/uXUhnwUr2O4HU8s/n6x+yNjQkHw==
 
-form-data@^4.0.0, form-data@^4.0.4, form-data@^4.0.5:
+form-data@^4.0.4, form-data@^4.0.5:
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/form-data/-/form-data-4.0.5.tgz#b49e48858045ff4cbf6b03e1805cebcad3679053"
   integrity sha512-8RipRLol37bNs2bhoV67fiTEvdTrbMUYcFTiy3+wuuOnUog2QBHCZWXDRijWQfAkhBj2Uf5UnVaiWwA5vdd82w==
@@ -4729,7 +4740,7 @@ http2-wrapper@^2.1.10:
     quick-lru "^5.1.1"
     resolve-alpn "^1.2.0"
 
-https-proxy-agent@^5.0.0:
+https-proxy-agent@^5.0.0, https-proxy-agent@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-5.0.1.tgz#c59ef224a04fe8b754f3db0063a25ea30d0005d6"
   integrity sha512-dFcAjpTQFgoLMzC2VwU+C/CbS7uRL0lWmxDITmqm7C+7F0Odmj6s9l6alZc6AELXhrnggM2CeWSXHGOdX2YtwA==
@@ -5216,23 +5227,25 @@ jake@^10.8.5:
     filelist "^1.0.4"
     minimatch "^3.1.2"
 
-jest-docblock@^29.0.0:
-  version "29.7.0"
-  resolved "https://registry.yarnpkg.com/jest-docblock/-/jest-docblock-29.7.0.tgz#8fddb6adc3cdc955c93e2a87f61cfd350d5d119a"
-  integrity sha512-q617Auw3A612guyaFgsbFeYpNP5t2aoUNLwBUbc/0kD1R4t9ixDbyFTHd1nok4epoVFpr7PmeWHrhvuV3XaJ4g==
+jest-docblock@^30.0.0:
+  version "30.4.0"
+  resolved "https://registry.yarnpkg.com/jest-docblock/-/jest-docblock-30.4.0.tgz#3ab779a027d1495ae21550accd4266bbe99af7a3"
+  integrity sha512-ZPMabUZCx5MpbZ2eBYSvZ0J8fvo3dR9oM+eeUpb3aKNQFuS2tu3Duw1TNlMoP8k3WQgKGJuhcMFvwcVuq6T7oA==
   dependencies:
-    detect-newline "^3.0.0"
+    detect-newline "^3.1.0"
 
-joi@^17.13.3:
-  version "17.13.3"
-  resolved "https://registry.yarnpkg.com/joi/-/joi-17.13.3.tgz#0f5cc1169c999b30d344366d384b12d92558bcec"
-  integrity sha512-otDA4ldcIx+ZXsKHWmp0YizCweVRZG96J10b0FevjfuncLO1oX59THoAmHkNubYJ+9gWsYsp5k8v4ib6oDv1fA==
+joi@^18.2.1:
+  version "18.2.3"
+  resolved "https://registry.yarnpkg.com/joi/-/joi-18.2.3.tgz#efdd1311496cd585730633fc57253a45641a3e85"
+  integrity sha512-N5A3KTWQpPWT4ExxxPlUx7WmykGXRzhNidWhV41d6Abu9YfI2NyWCJuxdPnslJCPWtbRpSVOWSnSS6GakLM/Rg==
   dependencies:
-    "@hapi/hoek" "^9.3.0"
-    "@hapi/topo" "^5.1.0"
-    "@sideway/address" "^4.1.5"
-    "@sideway/formula" "^3.0.1"
-    "@sideway/pinpoint" "^2.0.0"
+    "@hapi/address" "^5.1.1"
+    "@hapi/formula" "^3.0.2"
+    "@hapi/hoek" "^11.0.7"
+    "@hapi/pinpoint" "^2.0.1"
+    "@hapi/tlds" "^1.1.1"
+    "@hapi/topo" "^6.0.2"
+    "@standard-schema/spec" "^1.1.0"
 
 joycon@^3.1.1:
   version "3.1.1"
@@ -6635,18 +6648,18 @@ prettier-linter-helpers@^1.0.1:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier-plugin-apex@^2.2.6:
-  version "2.2.6"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-apex/-/prettier-plugin-apex-2.2.6.tgz#c90301cce53f14ec21275a1ed4ea848036971575"
-  integrity sha512-1z1WFl2zy0FDTCTLP9f/78TdEpTJ6qBGAf9vRbT9o4KRXBOfTmWkZiEYV1+QYky8ulxl085iS18JQKUm5K9KPg==
+prettier-plugin-apex@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-apex/-/prettier-plugin-apex-2.3.0.tgz#9a403f32334c2b75c4ad37ff84ed7b1152a886be"
+  integrity sha512-OSDeEeoQRAsKOKDZMJkxX5rqHXsxJGK8Pt5Vwws4afKP9XjrDBhw+AIz9vWhOgTtgBM4GFQ8WAeOfDcygNsQPQ==
   dependencies:
-    jest-docblock "^29.0.0"
-    wait-on "^8.0.0"
+    jest-docblock "^30.0.0"
+    wait-on "^9.0.0"
   optionalDependencies:
-    "@prettier-apex/apex-ast-serializer-darwin-arm64" "2.2.6"
-    "@prettier-apex/apex-ast-serializer-darwin-x64" "2.2.6"
-    "@prettier-apex/apex-ast-serializer-linux-x64" "2.2.6"
-    "@prettier-apex/apex-ast-serializer-win32-x64" "2.2.6"
+    "@prettier-apex/apex-ast-serializer-darwin-arm64" "2.3.0"
+    "@prettier-apex/apex-ast-serializer-darwin-x64" "2.3.0"
+    "@prettier-apex/apex-ast-serializer-linux-x64" "2.3.0"
+    "@prettier-apex/apex-ast-serializer-win32-x64" "2.3.0"
 
 prettier@*, prettier@^3.8.4:
   version "3.8.4"
@@ -6738,6 +6751,11 @@ proxy-from-env@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/proxy-from-env/-/proxy-from-env-1.1.0.tgz#e102f16ca355424865755d2c9e8ea4f24d58c3e2"
   integrity sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==
+
+proxy-from-env@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/proxy-from-env/-/proxy-from-env-2.1.0.tgz#a7487568adad577cfaaa7e88c49cab3ab3081aba"
+  integrity sha512-cJ+oHTW1VAEa8cJslgmUZrc+sjRKgAKl3Zyse6+PV38hZe/V6Z14TbCuXcan9F9ghlz4QrFr2c92TNF82UkYHA==
 
 psl@^1.1.33:
   version "1.9.0"
@@ -7031,10 +7049,10 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
-rxjs@^7.8.1:
-  version "7.8.1"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.8.1.tgz#6f6f3d99ea8044291efd92e7c7fcf562c4057543"
-  integrity sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==
+rxjs@^7.8.2:
+  version "7.8.2"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.8.2.tgz#955bc473ed8af11a002a2be52071bf475638607b"
+  integrity sha512-dhKf903U/PQZY6boNNtAGdWbG85WAbjT/1xYoZIC7FAY0yWapOBQVsVrDl58W86//e1VpMNBtRV4MaXfdMySFA==
   dependencies:
     tslib "^2.1.0"
 
@@ -8063,16 +8081,16 @@ validate-npm-package-name@^5.0.1:
   resolved "https://registry.yarnpkg.com/validate-npm-package-name/-/validate-npm-package-name-5.0.1.tgz#a316573e9b49f3ccd90dbb6eb52b3f06c6d604e8"
   integrity sha512-OljLrQ9SQdOUqTaQxqL5dEfZWrXExyyWsozYlAWFawPVNuD83igl7uJD2RTkNMbniIYgt8l81eCJGIdQF7avLQ==
 
-wait-on@^8.0.0:
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/wait-on/-/wait-on-8.0.1.tgz#13c8ec77115517f8fbc2d670521a444201f03f53"
-  integrity sha512-1wWQOyR2LVVtaqrcIL2+OM+x7bkpmzVROa0Nf6FryXkS+er5Sa1kzFGjzZRqLnHa3n1rACFLeTwUqE1ETL9Mig==
+wait-on@^9.0.0:
+  version "9.0.10"
+  resolved "https://registry.yarnpkg.com/wait-on/-/wait-on-9.0.10.tgz#9c73ad1908b8e46e853e1271b2c9563f2c2d8e02"
+  integrity sha512-rCoJEhvMr0X6alHmwc9abbrA5ZrLZFKpFQVKPNFwl2h7DapXOGdmimIHDtLOWhT4PjhZhxFEtZoQgEXbkDWdZw==
   dependencies:
-    axios "^1.7.7"
-    joi "^17.13.3"
-    lodash "^4.17.21"
+    axios "^1.16.0"
+    joi "^18.2.1"
+    lodash "^4.18.1"
     minimist "^1.2.8"
-    rxjs "^7.8.1"
+    rxjs "^7.8.2"
 
 webidl-conversions@^3.0.0:
   version "3.0.1"
