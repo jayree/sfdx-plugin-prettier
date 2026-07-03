@@ -1562,7 +1562,7 @@
   dependencies:
     "@xml-tools/parser" "^1.0.11"
 
-"@salesforce/core@^8.23.1", "@salesforce/core@^8.31.0", "@salesforce/core@^8.31.2", "@salesforce/core@^8.31.5":
+"@salesforce/core@^8.23.1", "@salesforce/core@^8.31.0", "@salesforce/core@^8.31.4", "@salesforce/core@^8.31.5":
   version "8.31.5"
   resolved "https://registry.yarnpkg.com/@salesforce/core/-/core-8.31.5.tgz#90f515912a3981805b56c38d8f2733e9ea847a68"
   integrity sha512-UY1tGclGmxnUM0uQc2qFn2PmkI6Wa5BaV0PCfqJ5NnOK0vcamP1ftr/bwSLWdRStxoW8/DwsRm8FNembuqp7jA==
@@ -1652,12 +1652,12 @@
     cli-progress "^3.12.0"
     terminal-link "^3.0.0"
 
-"@salesforce/source-deploy-retrieve@^12.36.7":
-  version "12.36.7"
-  resolved "https://registry.yarnpkg.com/@salesforce/source-deploy-retrieve/-/source-deploy-retrieve-12.36.7.tgz#d80fa77a3870cb249ff0f8a78036a2566a10fbd8"
-  integrity sha512-uP2tDBq4DEab+oJ6bi3AVGHZS2VdirpVzJ/Xv0ZEPO+OBbr8XQZqqQ9iulvrLaqpANTqs3UDAWTm8kzm61LQ7A==
+"@salesforce/source-deploy-retrieve@^12.37.0":
+  version "12.37.0"
+  resolved "https://registry.yarnpkg.com/@salesforce/source-deploy-retrieve/-/source-deploy-retrieve-12.37.0.tgz#9726be00568f186e265b3952d044ef973463bc8b"
+  integrity sha512-t8c+hOG3G8d8SozvZo+HK38R3HkYT8eEO9INi4Aum4LWP0nZDDqt0PbU8j8YLWLPixWfhoaHb+Wzp92xn3RY2A==
   dependencies:
-    "@salesforce/core" "^8.31.2"
+    "@salesforce/core" "^8.31.4"
     "@salesforce/kit" "^3.2.4"
     "@salesforce/ts-types" "^2.0.12"
     "@salesforce/types" "^1.6.0"
