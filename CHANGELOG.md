@@ -1,3 +1,11 @@
+## [1.3.180](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.179...v1.3.180) (2026-08-07)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 4.13.2 to 4.13.3 ([#1657](https://github.com/jayree/sfdx-plugin-prettier/issues/1657)) ([76a90f8](https://github.com/jayree/sfdx-plugin-prettier/commit/76a90f8d74fff885c5fe93e7760b9751b15932f5))
+* **deps:** bump github/codeql-action from 4.37.5 to 4.37.6 ([#1658](https://github.com/jayree/sfdx-plugin-prettier/issues/1658)) ([067421b](https://github.com/jayree/sfdx-plugin-prettier/commit/067421b5cd7ae02c98cbfb7d8ba36bf03b524982))
+
 ## [1.3.179](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.178...v1.3.179) (2026-07-31)
 
 
