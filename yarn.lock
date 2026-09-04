@@ -1147,7 +1147,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@oclif/core@^4", "@oclif/core@^4.11.4", "@oclif/core@^4.14.0":
+"@oclif/core@^4.11.4", "@oclif/core@^4.14.0":
   version "4.14.0"
   resolved "https://registry.yarnpkg.com/@oclif/core/-/core-4.14.0.tgz#b5c46200788f95ce57809ddec1502ae0aa9abf2b"
   integrity sha512-QCJIZoVJxV7jywgVAUlsQwl3dr3Sa21kfi5z9KrYolbexWJUtFSEtMoNiBWojD05mYycLnB50gp/VxlGdaOCRA==
@@ -1209,13 +1209,6 @@
     lodash.sortby "^4.7.0"
     semver "^7.8.5"
     ts-json-schema-generator "^2.9.0"
-
-"@oclif/plugin-help@^6.3.0":
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-6.3.0.tgz#eac5e68dafc8fcc46fa06203b481cf72160332aa"
-  integrity sha512-cpSRv7tyHHFPv39HrV22eNmu8ylrwjmPvqdlNo3URp79+p5319p+a8PI/3ez6A6GZmjwBj1EWUdVz1aPUAsSmw==
-  dependencies:
-    "@oclif/core" "^4"
 
 "@oclif/plugin-help@^7.0.0":
   version "7.0.0"
