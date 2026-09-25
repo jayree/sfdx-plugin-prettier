@@ -1,3 +1,10 @@
+## [1.3.186](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.185...v1.3.186) (2026-09-25)
+
+
+### Bug Fixes
+
+* **deps:** bump prettier from 3.9.6 to 3.9.8 ([#1698](https://github.com/jayree/sfdx-plugin-prettier/issues/1698)) ([98089de](https://github.com/jayree/sfdx-plugin-prettier/commit/98089de1e45d9fd977a218138e5f9e30023fa296))
+
 ## [1.3.185](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.184...v1.3.185) (2026-09-18)
 
 
