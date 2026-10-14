@@ -1322,10 +1322,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@oclif/core@^5.0.0", "@oclif/core@^5.1.7":
-  version "5.1.7"
-  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-5.1.7.tgz#fb1ca2904d95bad38a068bfcfeeb9b082c0b006b"
-  integrity sha512-70BOI+dbtg3dsk8oevulaIsJLXkQzhjmg9CZQ0sI+uSmBg1iLYqlv/QDAzbtOvLZEVHXXvCyU/5uW9k9VB+ljQ==
+"@oclif/core@^5.0.0", "@oclif/core@^5.1.2", "@oclif/core@^5.1.7":
+  version "5.1.8"
+  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-5.1.8.tgz#109564a941264534a5378f99a77e88e2a485c627"
+  integrity sha512-K1b3zdmbwANV9Jk+QN8aFvnXY/IhfWRnmhWn/V57h7alzbtck2je2DVVf0EkA01FokreF7Tpe+7hiGS87q30SA==
   dependencies:
     ansi-escapes "^4.3.2"
     ansis "^3.17.0"
@@ -1346,12 +1346,12 @@
     wrap-ansi "^7.0.0"
     wsl-utils "^0.4.0"
 
-"@oclif/plugin-command-snapshot@^6.0.2":
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-command-snapshot/-/plugin-command-snapshot-6.0.2.tgz#6e78d983994ae21f48d15b6a2747f09e2c0be96d"
-  integrity sha512-BFlO7UhgiUpvEr8/nMAgQ9GJzcnS118QeDmK8wlcoa/GK+S79A7l2U+stj9k8T0IoMcDL9ov400k1U9DrWlqrQ==
+"@oclif/plugin-command-snapshot@^6.0.5":
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-command-snapshot/-/plugin-command-snapshot-6.0.5.tgz#60cd1a1f3093d8fe1259d21efe25d92fcbf0a37e"
+  integrity sha512-YwVpl1ZqTP17V0FSOr2C998lbIp5bo2jj1oGw0ZmCu1LS0wBWMXPh6PW754avWNr1Gu84zPAZ+ow3WCfA7adwA==
   dependencies:
-    "@oclif/core" "^5.0.0"
+    "@oclif/core" "^5.1.2"
     ansis "^3.17.0"
     globby "^14.1.0"
     just-diff "^5.2.0"
