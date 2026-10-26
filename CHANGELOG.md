@@ -1,3 +1,10 @@
+## [1.3.196](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.195...v1.3.196) (2026-10-26)
+
+
+### Bug Fixes
+
+* **deps:** bump github/codeql-action from 4.39.0 to 4.39.1 ([#1733](https://github.com/jayree/sfdx-plugin-prettier/issues/1733)) ([63fa428](https://github.com/jayree/sfdx-plugin-prettier/commit/63fa4285913fb32afecd4fc7998980f4e347245c))
+
 ## [1.3.195](https://github.com/jayree/sfdx-plugin-prettier/compare/v1.3.194...v1.3.195) (2026-10-23)
 
 
