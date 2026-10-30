@@ -1414,10 +1414,10 @@
   resolved "https://registry.yarnpkg.com/@salesforce/prettier-config/-/prettier-config-0.0.3.tgz#ba648d4886bb38adabe073dbea0b3a91b3753bb0"
   integrity sha512-hYOhoPTCSYMDYn+U1rlEk16PoBeAJPkrdg4/UtAzupM1mRRJOwEPMG1d7U8DxJFKuXW3DMEYWr2MwAIBDaHmFg==
 
-"@salesforce/sf-plugins-core@^13.0.7":
-  version "13.0.7"
-  resolved "https://registry.yarnpkg.com/@salesforce/sf-plugins-core/-/sf-plugins-core-13.0.7.tgz#eadf33d17c8d300bd085b4c78d6905f166936a0e"
-  integrity sha512-nfVYno70TORUITGAMhGo0eD62M7LxTiD5TnpnRLOuG6ygt0TVz60NWX6eJRvmxOkHKqAK5hWjPOZXAYqV8JZUg==
+"@salesforce/sf-plugins-core@^13.0.8":
+  version "13.0.8"
+  resolved "https://registry.yarnpkg.com/@salesforce/sf-plugins-core/-/sf-plugins-core-13.0.8.tgz#41c61a1f8d49543c3fbe09445f1521991b29b5e0"
+  integrity sha512-Q20dYNsyCLztStPFqWVkLSumIRs1Jttd5/ZkjOkZ3lyyjfuBPFrEubR4aKaXQPWpdx1UvcZ6vHPupoUkuRLFSg==
   dependencies:
     "@inquirer/confirm" "^6.1.1"
     "@inquirer/password" "^5.1.1"
