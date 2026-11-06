@@ -19,7 +19,7 @@
     "ignore": "^7.0.14",
     "prettier": "^3.9.10",
     "prettier-plugin-apex": "^2.3.0",
-    "tslib": "^2.8.1"
+    "tslib": "^2.9.1"
   },
   "devDependencies": {
     "@oclif/plugin-command-snapshot": "^6.0.7",
