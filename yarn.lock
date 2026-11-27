@@ -4550,10 +4550,10 @@ ignore@^5.2.0, ignore@^5.2.4, ignore@^5.3.0, ignore@^5.3.2:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.3.2.tgz#3cd40e729f3643fd87cb04e50bf0eb722bc596f5"
   integrity sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==
 
-ignore@^7.0.14, ignore@^7.0.3, ignore@^7.0.5:
-  version "7.0.14"
-  resolved "https://registry.yarnpkg.com/ignore/-/ignore-7.0.14.tgz#a52b081dfb4d77e947e04d5f9e320b16f1873959"
-  integrity sha512-wCBiZ77u1tuWde6G/nfOtLaCTYcFDU5yCzARzK10y+rLhzYoL7a7yEemcopcc2Mzow7gZOIjnV2ym1NYmdiJOQ==
+ignore@^7.0.16, ignore@^7.0.3, ignore@^7.0.5:
+  version "7.0.16"
+  resolved "https://registry.yarnpkg.com/ignore/-/ignore-7.0.16.tgz#8c593ab7a7193e663f810203690c9cba851b6d3a"
+  integrity sha512-52N+Y4HRMOJmbLmr+DqO4iSRyyB7N52gm7PWCT6h0p978+oKbqHCB7gIJIwZvBUsjlSdWbrBFqUSmIFNZMpn0A==
 
 immediate@~3.0.5:
   version "3.0.6"
